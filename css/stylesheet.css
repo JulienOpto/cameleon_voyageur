@@ -1,0 +1,32 @@
+.navh {
+	height: 50px;
+}
+
+.banière-lg {
+	background-image: url("../img/banière-lg.jpg");
+	background-size: 100%;
+	height: 250px;
+	padding-top: 50px; 
+}
+
+.banière-md {
+	background-image: url("../img/banière-md.jpg");
+	background-size: 100%;
+	height: 250px;
+	padding-top: 50px; 
+}
+
+.banière-xs {
+	background-image: url("../img/banière-xs.jpg");
+	background-size: 100%;
+	height: 250px;
+	padding-top: 50px; 
+}
+
+.n-tel {
+	margin: -60px;
+}
+
+.navbar-marge {
+	margin-left: 50px; 
+}
