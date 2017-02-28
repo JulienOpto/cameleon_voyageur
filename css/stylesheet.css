@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .navh {
 	height: 50px;
 }
@@ -30,7 +30,8 @@
 
 .navbar-marge {
 	margin-left: 50px; 
-=======
+}
+
 body {
 	text-align: center;
 }
@@ -43,5 +44,5 @@ body {
 	border: none;
 	padding-top: 50px;
 	background-color: rgb(241,161,82);
->>>>>>> b4571a359163782f84d5377a84408dfbf3aac5b7
+
 }
