@@ -52,10 +52,7 @@
 				<div class="col-lg-12 banière-xs img-responsive visible-xs"></div>
 			</div>
 			<div class="row">		
-				<div class="col-lg-3">
-					<img src="img/prez.png"/>
-				</div>	
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-lg-offset-2">
 					<h1>Bienvenue au Caméléon Voyageur</h1>
 					<p>Marc et Kim vous invite à venir goûter leur savoureuse cuisine, issue d'une fusion surprenante entre le bagel new-yorkais et la gastronomie coréenne.<br/>Ils sillonnent l'agglomération orléanaise toute la semaine, à bord de leur camion, dans la joie et la bonne humeur, pour partager leur amour des mélanges inattendus !<br/>Retrouvez les dès à présent à toutes les adresses listées. Marc et Kim vous attendent.</p>			<!--insérer un lien sur "Retrouvez les..." qui mène en bas de page sur la carte-->
 				</div>
@@ -87,22 +84,19 @@
 
 
 
-				<div class="row">			<!-- choix menus -->
-					<nav></nav>			<!-- navigation menu -->
-					<div class="col-xs-12">			<!-- caroussel bagel -->
-
-					<nav class="col-md-6 col-md-offset-3 col-xs-12">
-						<ul class="nav nav-pills">
-							<li role="presentation" class="col-md-3 col-xs-6 active"><a href="#">Bagels</a></li>
-							<li role="presentation" class="col-md-3 col-xs-6"><a href="#">Rolls & salades</a></li>
-							<li role="presentation" class="col-md-3 col-xs-6"><a href="#">Desserts</a></li>
-							<li role="presentation" class="col-md-3 col-xs-6"><a href="#">Boissons</a></li>						
+				<div class="row">		<!-- choix menus -->					
+					<nav class="col-md-6 col-md-offset-3 col-xs-12 nav-menu">
+						<ul class="nav nav-pills" role="tablist">
+							<li role="presentation" class="col-md-3 col-xs-6 active"><a href="#slider1" aria-controls="slider1" role="tab" data-toggle="pill">Bagels</a></li>
+							<li role="presentation" class="col-md-3 col-xs-6"><a href="#slider2" aria-controls="slider2" role="tab" data-toggle="pill">Rolls & salades</a></li>
+							<li role="presentation" class="col-md-3 col-xs-6"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="pill">Desserts</a></li>
+							<li role="presentation" class="col-md-3 col-xs-6"><a href="#boissons" aria-controls="boissons" role="tab" data-toggle="pill">Boissons</a></li>						
 						</ul>			
 					</nav>
 
 				  				<!-- carousel bagels-->
-						<div class="row">
-							<div id="slider1" class="carousel slide col-md-12" data-ride="carousel" data-interval="false">
+						<div class="row tab-content">
+							<div id="slider1" class="carousel slide col-md-10 col-md-offset-1 tab-pane active zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
 								<ol class="carousel-indicators">
 									<li data-target="#slider1" data-slide-to="0" class="active"></li>
 									<li data-target="#slider1" data-slide-to="1"></li>
@@ -110,16 +104,52 @@
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
 										<div class="row">
-											<div class="col-md-4 thumbnail"><img src="img/Menu/Feta.png"></div>
-											<div class="col-md-4 thumbnail"><img src="img/Menu/manhattan.png"></div>
-											<div class="col-md-4 thumbnail"><img src="img/Menu/Serano.png"></div>											
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/Feta.r.png" alt="Feta">
+												<div class="caption">
+									        		<h3>Le Feta</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+											</div>
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/manhattan.r.png" alt="Manhattan">
+												<div class="caption">
+									        		<h3>Le Manhattan</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+											</div>
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/Serano.r.png" alt="Serano">
+												<div class="caption">
+									        		<h3>Le Serano</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+											</div>											
 										</div>
 									</div>
 									<div class="item">
 										<div class="row">
-											<div class="col-md-4 thumbnail"><img src="img/formule4.r.jpg"></div>
-											<div class="col-md-4 thumbnail"><img src="img/formule4.r.jpg"></div>
-											<div class="col-md-4 thumbnail"><img src="img/formule4.r.jpg"></div>
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/dinde.r.png" alt="Dinde">
+												<div class="caption">
+									        		<h3>Le Dinde</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+									    	</div>
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/lox.r.png" alt="Lox">
+												<div class="caption">
+									        		<h3>Le Lox</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+											</div>
+											<div class="col-md-4 thumbnail">
+												<img src="img/Menu/poulet.r.png" alt="Poulet">
+												<div class="caption">
+									        		<h3>Le Poulet</h3>
+									        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+									    		</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -129,13 +159,74 @@
 				        		<a class="carousel-control right" href="#slider1" data-slide="next">
 				            		<span class="glyphicon glyphicon-chevron-right"></span>
 				        		</a>
+							</div>
+										<!-- caroussel rolls -->
+							<div id="slider2" class="carousel slide col-md-10 col-md-offset-1 tab-pane zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+									<ol class="carousel-indicators">
+										<li data-target="#slider2" data-slide-to="0" class="active"></li>
+										<li data-target="#slider2" data-slide-to="1"></li>
+									</ol>
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<div class="row">
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/chiken.r.png" alt="Chicken">
+													<div class="caption">
+										        		<h3>Chicken Rolls</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+												</div>
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/kimbap.r.png" alt="Kimbap">
+													<div class="caption">
+										        		<h3>Les Kimbap</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+												</div>
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/mandu.r.png" alt="Mandu">
+													<div class="caption">
+										        		<h3>Les Mandus</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+												</div>											
+											</div>
+										</div>
+										<div class="item">
+											<div class="row">
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/Salade.r.png" alt="Salade">
+													<div class="caption">
+										        		<h3>La Salade</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+										    	</div>
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/rock.r.png" alt="Rock">
+													<div class="caption">
+										        		<h3>Le Rock N'Roll</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+												</div>
+												<div class="col-md-4 thumbnail">
+													<img src="img/Menu/thon.r.png" alt="Thon">
+													<div class="caption">
+										        		<h3>Le Thon</h3>
+										        		<p>Son parfum évolue au fil des saisons<br/><br/>Prix : 3,50€</p>
+										    		</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control left" href="#slider2" data-slide="prev">
+					            		<span class="glyphicon glyphicon-chevron-left"></span>
+					        		</a>
+					        		<a class="carousel-control right" href="#slider2" data-slide="next">
+					            		<span class="glyphicon glyphicon-chevron-right"></span>
+					        		</a>
 							</div> 
-						</div> 
-					
-
-
-					<div class="row">  <!-- Thumbnails Desserts --> 
-						<div class="col-xs-12">
+							<!-- Thumbnails Desserts --> 
+						<div class="col-xs-12 tab-pane zone-menu" id="desserts" role="tabpanel">
 							<h2>Nos desserts</h2>
 							<div class="row">
 								<div class="col-xs-offset-1 col-xs-10">
@@ -149,13 +240,13 @@
 									    </div>
 									</div>
 							    </div>
-							    <div class="thumbnail col-xs-12 col-md-4">    <!-- muffin -->
-									      <img src="img/thumb_muffin_big.jpg" alt="muffin">
-									      <div class="caption">
-									        <h3>Muffin</h3>
-									        <p>Blueberry ou Pépites de chocolat<br/><br/>Prix : 2,70€</p>
-									      </div>
-							    </div>
+							    		<div class="thumbnail col-xs-12 col-md-4">    <!-- muffin -->
+									      	<img src="img/thumb_muffin_big.jpg" alt="muffin">
+									      	<div class="caption">
+									        	<h3>Muffin</h3>
+									        	<p>Blueberry ou Pépites de chocolat<br/><br/>Prix : 2,70€</p>
+									      	</div>
+							    		</div>
 							    <div class="thumbnail col-xs-12 col-md-4">    <!-- cookies -->
 									      <img src="img/thumb_cookies_big.jpg" alt="cookies">
 									      <div class="caption">
@@ -163,14 +254,11 @@
 									        <p>Pépites de chocolat ou Tout chocolat<br/><br/>Prix : 2,50€</p>
 									      </div>
 									    </div>
-									</div>
-								</div>
 							</div>
-					</div>
+						</div>
 
-
-					<div class="row">  <!-- Thumbnails Boissons --> 
-					  <div class="col-xs-12">
+						<!-- Thumbnails Boissons --> 
+					  <div class="col-xs-12 tab-pane zone-menu" id="boissons" role="tabpanel">
 					  <h2>Nos boissons</h2>
 					    <div class="row">
 					    	<div class="col-xs-offset-1 col-xs-10">
@@ -200,11 +288,17 @@
 							</div>
 					    </div>
 					  </div>
-					</div>
+					</div>								
+
+					  
+					
+
+					  
+				
 
 
-				</div>
-
+				
+			</div>
 
 		</div>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
