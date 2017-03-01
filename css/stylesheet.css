@@ -1,27 +1,9 @@
+body {
+	text-align: center;
+}
 
 .navh {
-	height: 50px;
-}
-
-.banière-lg {
-	background-image: url("../img/banière-lg.jpg");
-	background-size: 100%;
-	height: 250px;
-	padding-top: 50px; 
-}
-
-.banière-md {
-	background-image: url("../img/banière-md.jpg");
-	background-size: 100%;
-	height: 250px;
-	padding-top: 50px; 
-}
-
-.banière-xs {
-	background-image: url("../img/banière-xs.jpg");
-	background-size: 100%;
-	height: 250px;
-	padding-top: 50px; 
+	height: 60px;
 }
 
 .n-tel {
@@ -32,17 +14,41 @@
 	margin-left: 50px; 
 }
 
-body {
-	text-align: center;
+.banière-lg {
+	background: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 600px;
+}
+
+.banière-md {
+	background-image: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 400px;
+	padding-top: 50px; 
+}
+
+.banière-xs {
+	background-image: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 300px;
+	padding-top: 50px; 
+}
+
+.formules {
+	background-color: rgb(241,161,82);
 }
 
 .formule {
-	background-color: rgb(241,161,82);
-}
-
-.thumbnail {
 	border: none;
 	padding-top: 50px;
 	background-color: rgb(241,161,82);
-
 }
+
+.nav-pills > li + li {
+    margin-left: 0;
+}
+
+#slider {
+	margin-top: 100px;
+}
+
