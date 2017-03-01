@@ -3,6 +3,10 @@ body {
 	background-color: silver;
 }
 
+h2 {
+	padding-bottom: 20px;
+}
+
 .navh {
 	height: 60px;
 }
@@ -57,5 +61,23 @@ nav-menu {
 	margin-top: 20px;
 }
 
-.thumbnail {
+.col-sm-2 {
+	border-radius : 10px;
+	padding-top: 10px;
+}
+
+.col-xs-12 {
+	border-radius : 10px;
+	padding-top: 10px;
+}
+
+#photothumb {
+	border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+
+h3 {
+    font-size: 18px;
+  }
 }
