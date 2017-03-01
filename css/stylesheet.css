@@ -1,6 +1,17 @@
+body {
+	text-align: center;
+}
 
 .navh {
 	height: 50px;
+}
+
+.n-tel {
+	margin: -60px;
+}
+
+.navbar-marge {
+	margin-left: 50px; 
 }
 
 .banière-lg {
@@ -24,25 +35,12 @@
 	padding-top: 50px; 
 }
 
-.n-tel {
-	margin: -60px;
-}
-
-.navbar-marge {
-	margin-left: 50px; 
-}
-
-body {
-	text-align: center;
+.formules {
+	background-color: rgb(241,161,82);
 }
 
 .formule {
-	background-color: rgb(241,161,82);
-}
-
-.thumbnail {
 	border: none;
 	padding-top: 50px;
 	background-color: rgb(241,161,82);
-
 }
