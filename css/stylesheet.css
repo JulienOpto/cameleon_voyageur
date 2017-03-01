@@ -44,3 +44,11 @@ body {
 	padding-top: 50px;
 	background-color: rgb(241,161,82);
 }
+
+.nav-pills > li + li {
+    margin-left: 0;
+}
+
+#slider {
+	margin-top: 100px;
+}
