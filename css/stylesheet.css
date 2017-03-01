@@ -12,37 +12,74 @@ h2 {
 }
 
 .n-tel {
-	margin: -60px;
+	margin-left: 150px;
+	margin-top: 15px;
+	font-weight: bold;
+
 }
 
+.logo-fb{
+	margin-top: -10px; 
+	margin-bottom: -10px;
+}
 .navbar-marge {
 	margin-left: 50px; 
 }
 
-.banière-lg {
+.logo-mini{
+	margin-top: -15px; 
+	margin-left: -15px;
+}
+
+.banière-lg, .banière-md {
 	background: url("../img/banière-lg.jpg");
 	background-size: cover;
+	margin-top: 50px
+}
+
+.banière-lg {
 	height: 600px;
 }
 
 .banière-md {
-	background-image: url("../img/banière-lg.jpg");
-	background-size: cover;
 	height: 400px;
-	padding-top: 50px; 
 }
 
 .banière-xs {
-	background-image: url("../img/banière-lg.jpg");
+	background-image: url("../img/banière-xs.jpg");
 	background-size: cover;
 	height: 300px;
-	padding-top: 50px; 
+	margin-top: 50px 
 }
 
+.sec-img-lg, .sec-img-md, .sec-img-xs {
+	background: url("../img/sec-img.jpg");
+	background-size: cover;
+}
+
+.sec-img-lg {
+	height: 600px;
+}
+
+.sec-img-md {
+	height: 400px;
+}
+
+.sec-img-xs {
+	height: 300px;
+}
+
+.prez {
+	padding: 20px;
+}
+
+.formules {
+=======
 .formules {
 
 	margin-top: 50px;
 	margin-bottom: 50px;
+>>>>>>> 73f85df33b6262a89e769618e02d04b05e07f21b
 	background-color: rgb(241,161,82);
 }
 
