@@ -1,31 +1,29 @@
-
 .navh {
-	height: 50px;
+	height: 60px;
 }
 
 .banière-lg {
-	background-image: url("../img/banière-lg.jpg");
-	background-size: 100%;
-	height: 500px;
-	padding-top: 50px; 
+	background: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 600px;
 }
 
 .banière-md {
-	background-image: url("../img/banière-md.jpg");
-	background-size: 100%;
-	height: 250px;
+	background-image: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 400px;
 	padding-top: 50px; 
 }
 
 .banière-xs {
-	background-image: url("../img/banière-xs.jpg");
-	background-size: 100%;
-	height: 250px;
+	background-image: url("../img/banière-lg.jpg");
+	background-size: cover;
+	height: 300px;
 	padding-top: 50px; 
 }
 
 .n-tel {
-	margin: -60px;
+	margin: -50px;
 }
 
 .navbar-marge {
@@ -46,3 +44,4 @@ body {
 	background-color: rgb(241,161,82);
 
 }
+
