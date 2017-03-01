@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: silver;
+	background-color: rgb(205,229,154);
 }
 
 h2 {
@@ -71,12 +71,24 @@ h2 {
 
 .prez {
 	padding: 20px;
+	height: 300px;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.formules {
+	margin-bottom: 50px;
+	background-color: rgb(237,197,143);
 }
 
 .formule {
 	border: none;
-	padding-top: 50px;
-	background-color: rgb(241,161,82);
+	padding-top: 30px;
+	background-color: rgb(237,197,143);
 }
 
 nav-menu {
@@ -97,6 +109,12 @@ nav-menu {
 
 .photothumb {
 	border-radius: 6px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 980px) {
