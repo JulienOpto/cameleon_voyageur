@@ -65,6 +65,20 @@ nav-menu {
 	border-radius: 6px;
 }
 
+.carto {
+	text-center: center;
+}
+
+.localisation {
+	border: 1px solid black;
+	padding-top: 5px;
+	margin-top: 30px;
+}
+
+.carte {
+	margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 980px) {
 
 h3 {
