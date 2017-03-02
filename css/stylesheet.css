@@ -4,8 +4,11 @@ body {
 }
 
 h1 {
+	font-family: "Gloria Hallelujah", cursive, sans-serif;
+	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 6.5em;
+	font-size: 50px;
+	padding-bottom: 20px;
 }
 
 h2 {
@@ -83,8 +86,7 @@ h3 {
 }
 
 .prez {
-	padding: 20px;
-	height: 500px;
+	padding: 80px;
 }
 
 .parallax {
@@ -101,13 +103,29 @@ h3 {
 
 }
 .formules {
-	background-color: rgb(237,197,143);
+	background-color: rgb(248,248,248);
+	padding-bottom: 10px;
 }
 
 .formule {
-	border: none;
-	padding-top: 30px;
-	background-color: rgb(237,197,143);
+	border: 1px solid rgb(112,142,30);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	height: 300px;
+	
+}
+
+.faim {
+	font-color: rgb(112,142,30);
+}
+
+.form {
+
+}
+
+.picForm {
+
 }
 
 .thumbnail {
@@ -194,6 +212,17 @@ a:focus, a:hover {
 }
 
 @media only screen and (max-device-width: 767px) {
+    
+	h1 {
+		font-size:40px;
+		font-family: "Gloria Hallelujah", cursive, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.prez {
+		padding: 20px;
+	}
+
     .parallax {
         background-attachment: scroll;
     }
@@ -221,12 +250,23 @@ a:focus, a:hover {
 
 @media screen and (min-width: 768px) and (max-width: 872px) {
 
+	h1 {
+		font-size:40px;
+		font-family: "Gloria Hallelujah", cursive, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
 	h3 {
 	    font-size: 18px;
 	  }
 
 	.carte {
 		margin-top: 50px;
+	}
+
+	.prez {
+		padding: 20px;
 	}
 
 }
