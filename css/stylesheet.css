@@ -120,7 +120,7 @@ h3 {
 }
 
 .form {
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: rgb(205,229,154);
 }
@@ -130,9 +130,9 @@ h3 {
 .formule {
 	border: 1px solid rgb(112,142,30);
 	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-bottom: 30px;
 	border-radius: 10px;
-	height: 300px;
+	height: 440px;
 	
 }
 
@@ -165,7 +165,7 @@ a:focus, a:hover {
 }
 
 .taille {
-	margin-top: 50px;
+	padding-top: 50px;
 	margin-bottom: 50px;
 	height: 440px;
 }
@@ -179,11 +179,15 @@ a:focus, a:hover {
 }
 
 .contenu {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .photothumb {
 	border-radius: 6px;
+}
+
+.dates {
+	padding-top: 50px;
 }
 
 .localisation {
