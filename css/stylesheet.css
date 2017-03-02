@@ -110,6 +110,10 @@ h3 {
 	background-color: rgb(237,197,143);
 }
 
+.thumbnail {
+	height: 440px;
+}
+
 .nav-menu {
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -119,9 +123,20 @@ h3 {
     margin-left: 0;
 }
 
+a {
+	color: rgb(112,142,30);
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+	background-color: rgb(112,142,30);
+}
+
+a:focus, a:hover {
+	color: rgb(112,142,30);
+}
+
 .taille {
 	margin-top: 50px;
-	height: 460px;
+	height: 440px;
 }
 
 .carousel-control.right {
@@ -155,6 +170,8 @@ h3 {
 }
 
 .logo-footer {
+	margin-top: 20px;
+	padding-right: 30px;
 	border-right: 3px dashed rgb(112,142,30);
 }
 
@@ -162,15 +179,18 @@ h3 {
 	background-color: rgb(112,142,30);
 	padding-top: 20px;
 	padding-bottom: 15px;
-
 }
 
-.LikeFacebook {
-	padding-top: 10px;
+.footer-facebook {
+	margin-top: 30px;
 }
 
-.logoFbFooter {
-	padding-top: 10px;
+.texte-mention {
+	color: white;
+}
+
+.texte-mention:hover {
+	color: white;
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -181,6 +201,10 @@ h3 {
     .carte {
     	display: none;
     }
+
+    .logo-footer {
+	border-right: none;
+	}
 }
 
 @media screen and (min-width: 871px) and (max-width: 980px) {
