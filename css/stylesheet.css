@@ -3,9 +3,15 @@ body {
 	background-color: rgb(205,229,154);
 }
 
+h1 {
+	font-weight: bold;
+	font-size: 6.5em;
+}
+
 h2 {
 	padding-bottom: 20px;
 }
+
 
 h3 {
 	font-color: rgb(112,142,30);
@@ -49,6 +55,9 @@ h3 {
 	height: 400px;
 }
 
+.test{
+	z-index: 3;
+}
 .banière-xs {
 	background-image: url("../img/banière-xs.jpg");
 	background-size: cover;
@@ -84,8 +93,14 @@ h3 {
 	background-repeat: no-repeat;
 }
 
+.logo-lg{
+	margin-top: -50px;
+	position: absolute;
+	z-index: 10;
+	margin-left: -160px;
+
+}
 .formules {
-	margin-bottom: 50px;
 	background-color: rgb(237,197,143);
 }
 
@@ -95,16 +110,30 @@ h3 {
 	background-color: rgb(237,197,143);
 }
 
-nav-menu {
-	margin-top: 20px;
+.nav-menu {
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .nav-pills > li + li {
     margin-left: 0;
 }
 
-.zone-menu {
+.taille {
 	margin-top: 50px;
+	height: 460px;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-control.left {
+	background-image: none;
+}
+
+.contenu {
+	margin-bottom: 50px;
 }
 
 .photothumb {
