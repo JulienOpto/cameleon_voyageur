@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: silver;
+	background-color: rgb(205,229,154);
 }
 
 h2 {
@@ -12,41 +12,83 @@ h2 {
 }
 
 .n-tel {
-	margin: -60px;
+	margin-left: 150px;
+	margin-top: 15px;
+	font-weight: bold;
+
 }
 
+.logo-fb{
+	margin-top: -10px; 
+	margin-bottom: -10px;
+}
 .navbar-marge {
 	margin-left: 50px; 
 }
 
-.banière-lg {
+.logo-mini{
+	margin-top: -15px; 
+	margin-left: -15px;
+}
+
+.banière-lg, .banière-md {
 	background: url("../img/banière-lg.jpg");
 	background-size: cover;
+	margin-top: 50px
+}
+
+.banière-lg {
 	height: 600px;
 }
 
 .banière-md {
-	background-image: url("../img/banière-lg.jpg");
-	background-size: cover;
 	height: 400px;
-	padding-top: 50px; 
 }
 
 .banière-xs {
-	background-image: url("../img/banière-lg.jpg");
+	background-image: url("../img/banière-xs.jpg");
 	background-size: cover;
 	height: 300px;
-	padding-top: 50px; 
+	margin-top: 50px 
+}
+
+.sec-img-lg, .sec-img-md, .sec-img-xs {
+	background: url("../img/sec-img.jpg");
+	background-size: cover;
+}
+
+.sec-img-lg {
+	height: 600px;
+}
+
+.sec-img-md {
+	height: 400px;
+}
+
+.sec-img-xs {
+	height: 300px;
+}
+
+.prez {
+	padding: 20px;
+	height: 300px;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .formules {
-	background-color: rgb(241,161,82);
+	margin-bottom: 50px;
+	background-color: rgb(237,197,143);
 }
 
 .formule {
 	border: none;
-	padding-top: 50px;
-	background-color: rgb(241,161,82);
+	padding-top: 30px;
+	background-color: rgb(237,197,143);
 }
 
 nav-menu {
@@ -58,25 +100,31 @@ nav-menu {
 }
 
 .zone-menu {
-	margin-top: 30px;
+	margin-top: 50px;
+}
+
+.zone-menu1 {
+	margin-top: 100px;
 }
 
 .photothumb {
 	border-radius: 6px;
 }
 
-.carto {
-	text-center: center;
-}
-
 .localisation {
 	border: 1px solid black;
-	padding-top: 5px;
+	padding: 5px;
 	margin-top: 30px;
 }
 
 .carte {
 	margin-top: 20px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 980px) {
