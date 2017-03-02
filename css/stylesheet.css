@@ -78,7 +78,6 @@ h2 {
 }
 
 .formules {
-	margin-bottom: 50px;
 	background-color: rgb(237,197,143);
 }
 
@@ -88,8 +87,9 @@ h2 {
 	background-color: rgb(237,197,143);
 }
 
-nav-menu {
-	margin-top: 20px;
+.nav-menu {
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .nav-pills > li + li {
@@ -98,6 +98,14 @@ nav-menu {
 
 .zone-menu {
 	margin-top: 50px;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-control.left {
+	background-image: none;
 }
 
 .photothumb {
