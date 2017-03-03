@@ -132,10 +132,6 @@ ul {
 	color: rgb(112,142,30);
 }
 
-.titreFondVert {
-	color: rgb(255,255,255);
-}
-
 .produit {
 	padding-top: 40px;
 	padding-bottom: 10px;
@@ -327,7 +323,7 @@ a:focus, a:hover {
 	}
 
 	.caption-big {
-		bottom: 70px;
+		bottom: 80px;
 	}
 
 	.caption-medium {
