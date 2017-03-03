@@ -119,25 +119,30 @@ h3 {
 
 }
 
-.form {
-	padding-top: 30px;
-	padding-bottom: 50px;
-	background-color: rgb(205,229,154);
-}
-
-
-
 .formule {
 	border: 1px solid rgb(112,142,30);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	height: 300px;
-	
+	margin-bottom: 5px;
+	min-height: 550px;
+	position: relative;
 }
 
 .faim {
 	font-color: rgb(112,142,30);
+}
+
+.form {
+	padding-top: 30px;
+	background-color: rgb(205,229,154);
+	position: absolute;
+	bottom: 10px;
+}
+
+.picForm {
+
 }
 
 .thumbnail {
@@ -272,6 +277,10 @@ a:focus, a:hover {
 		margin-top: 30px;
 	}
 
+	.formule {
+		height: 200px;
+	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 872px) {
@@ -295,4 +304,7 @@ a:focus, a:hover {
 		padding: 20px;
 	}
 
+	.formule {
+		height: 250px;
+	}
 }
