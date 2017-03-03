@@ -50,6 +50,7 @@ h3 {
 	margin-top: -10px; 
 	margin-bottom: -10px;
 }
+
 .navbar-marge {
 	margin-left: 50px; 
 }
@@ -125,7 +126,7 @@ h3 {
 	border-radius: 10px;
 	height: 300px;
 	margin-bottom: 5px;
-	min-height: 550px;
+	min-height: 380px;
 	position: relative;
 }
 
@@ -138,6 +139,7 @@ h3 {
 	background-color: rgb(205,229,154);
 	position: absolute;
 	bottom: 10px;
+    text-align: center;
 }
 
 .picForm {
