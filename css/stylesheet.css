@@ -27,6 +27,7 @@ h2 {
 	font-family: "Indie Flower", cursive, sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 40px;
 }
 
 
@@ -109,6 +110,10 @@ ul {
 	padding: 50px;
 }
 
+.btn-retrouve {
+	font-size: 20px;
+}
+
 .parallax {
 	background-attachment: fixed;
 	background-position: center;
@@ -123,6 +128,14 @@ ul {
 
 }
 
+.titreFondBlanc {
+	color: rgb(112,142,30);
+}
+
+.titreFondVert {
+	color: rgb(255,255,255);
+}
+
 .produit {
 	padding-top: 40px;
 	padding-bottom: 10px;
@@ -134,13 +147,24 @@ ul {
 	background-color: rgb(205, 229, 154);
 }
 
+.formules-titre {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background-color: rgb(254, 254, 254);
+}
+
+.formules-bckg {
+	background-color: rgb(254,254,254);
+}
+
 .formule {
-	border: 1px solid rgb(112,142,30);
+	border: 5px solid rgb(112,142,30);
+	background-color: rgb(205, 229, 154);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	height: 315px;
-	margin-bottom: 5px;
+	margin-bottom: 35px;
 	position: relative;
 }
 
@@ -225,8 +249,13 @@ a:focus, a:hover {
 	background-image: none;
 }
 
+
 .cap-menu {
 	margin-top: 30px;
+}
+
+.carte-bckg {
+	background-color: rgb(254,254,254);
 }
 
 .dates {
@@ -253,7 +282,7 @@ a:focus, a:hover {
 }
 
 .footer {
-	background-color: rgb(248,248,248);
+	background-color: rgb(205,229,154);
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -471,6 +500,10 @@ a:focus, a:hover {
 
 @media screen and (min-width: 330px) and (max-width: 360px) {
 
+	h2 {
+		font-size: 30px;
+	}
+
 	.formule {
 		height: 300px;
 	}
@@ -486,9 +519,22 @@ a:focus, a:hover {
 	.caption-small {
 		bottom: 120px;
 	}
+
+	.btn-retrouve {
+		font-size: 14px;
+	}
 }
 
 @media screen and (min-width: 310px) and (max-width: 330px) {
+
+	h2 {
+		font-size: 30px;
+	}
+
+	.produit {
+		padding-top: 30px;
+		padding-bottom: 2px;
+	}
 
 	.formule {
 		height: 300px;
@@ -504,5 +550,9 @@ a:focus, a:hover {
 
 	.caption-small {
 		bottom: 110px;
+	}
+
+	.btn-retrouve {
+		font-size: 14px;
 	}
 }
