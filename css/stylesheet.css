@@ -14,7 +14,6 @@ h1 {
 
 .descriptif {
 	font-size: 20px;
-
 }
 
 li {
@@ -74,7 +73,7 @@ h3 {
 	height: 400px;
 }
 
-.test{
+.z-nav {
 	z-index: 3;
 }
 .banière-xs {
@@ -299,4 +298,38 @@ a:focus, a:hover {
 		padding: 20px;
 	}
 
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1434px) {
+
+	.logo-lg {
+		margin-left: -315px;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	
+	.nav-size {
+	font-size: 13px;
+	padding-right: 2px;
+	}
+
+	.n-tel {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+	.n-tel { 
+		margin-left: 100px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.descriptif {
+	font-size: 15px;
+}
 }
