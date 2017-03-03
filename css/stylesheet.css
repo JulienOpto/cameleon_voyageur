@@ -119,14 +119,24 @@ h3 {
 
 }
 
+.produit {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.form {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(205, 229, 154);
+}
+
 .formule {
 	border: 1px solid rgb(112,142,30);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
-	height: 300px;
+	height: 315px;
 	margin-bottom: 5px;
-	min-height: 550px;
 	position: relative;
 }
 
@@ -134,15 +144,33 @@ h3 {
 	font-color: rgb(112,142,30);
 }
 
+.caption-big {
+	position: absolute;
+	bottom: 90px;
+	left: 0;
+	right: 0;
+}
+
+.caption-medium {
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+}
+
+.caption-small {
+	position: absolute;
+	bottom: 120px;
+	left: 0;
+	right: 0;
+}
+
 .texte-formule {
-	padding-top: 30px;
 	background-color: rgb(205,229,154);
 	position: absolute;
 	bottom: 10px;
-}
-
-.picForm {
-
+	left: 2px;
+	right: 2px;
 }
 
 .thumbnail {
@@ -150,8 +178,10 @@ h3 {
 }
 
 .nav-menu {
-	margin-top: 70px;
+	margin-top: 10px;
 	margin-bottom: 30px;
+	border-top: 1px solid rgb(112,142,30);
+	border-bottom: 1px solid rgb(112,142,30);
 }
 
 .nav-pills > li + li {
@@ -181,6 +211,12 @@ a:focus, a:hover {
 
 .carousel-control.left {
 	background-image: none;
+}
+
+.dates {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 .contenu {
@@ -238,36 +274,26 @@ a:focus, a:hover {
 	color: white;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 991px) and (max-width: 1620px) {
     
-	h1 {
-		font-size:40px;
-		font-family: "Gloria Hallelujah", cursive, sans-serif;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-	.prez {
-		padding: 20px;
+	.formule {
+		height: 390px;
 	}
 
-    .parallax {
-        background-attachment: scroll;
-    }
+	.caption-big {
+		bottom: 70px;
+	}
 
-    .carte {
-    	display: none;
-    }
+	.caption-medium {
+		bottom: 115px;
+	}
 
-    .logo-footer {
-	margin: 20px auto 0 auto;
-	padding-right: 0;
-	padding-bottom: 20px;
-	border-right: none;
-	border-bottom: 3px dashed rgb(112,142,30);
+	.caption-small {
+		bottom: 115px;
 	}
 }
 
-@media screen and (min-width: 871px) and (max-width: 980px) {
+@media screen and (min-width: 871px) and (max-width: 990px) {
 
 	h3 {
 	    font-size: 18px;
@@ -281,6 +307,17 @@ a:focus, a:hover {
 		height: 200px;
 	}
 
+	.caption-big {
+		bottom: 70px;
+	}
+
+	.caption-medium {
+		bottom: 70px;
+	}
+
+	.caption-small {
+		bottom: 70px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 872px) {
@@ -305,6 +342,101 @@ a:focus, a:hover {
 	}
 
 	.formule {
-		height: 250px;
+		height: 280px;
+	}
+
+	.caption-big {
+		bottom: 90px;
+	}
+
+	.caption-medium {
+		bottom: 100px;
+	}
+
+	.caption-small {
+		bottom: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    
+	h1 {
+		font-size:30px;
+		font-family: "Gloria Hallelujah", cursive, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.prez {
+		padding: 20px;
+	}
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .carte {
+    	display: none;
+    }
+
+    .logo-footer {
+	margin: 20px auto 0 auto;
+	padding-right: 0;
+	padding-bottom: 20px;
+	border-right: none;
+	border-bottom: 3px dashed rgb(112,142,30);
+	}
+
+	.formule {
+		height: 200px;
+	}
+
+	.caption-big {
+		bottom: 60px;
+	}
+
+	.caption-medium {
+		bottom: 60px;
+	}
+
+	.caption-small {
+		bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 330px) and (max-width: 360px) {
+
+	.formule {
+		height: 300px;
+	}
+
+	.caption-big {
+		bottom: 60px;
+	}
+
+	.caption-medium {
+		bottom: 120px;
+	}
+
+	.caption-small {
+		bottom: 120px;
+	}
+}
+
+@media screen and (min-width: 310px) and (max-width: 330px) {
+
+	.formule {
+		height: 300px;
+	}
+
+	.caption-big {
+		bottom: 80px;
+	}
+
+	.caption-medium {
+		bottom: 70px;
+	}
+
+	.caption-small {
+		bottom: 110px;
 	}
 }
