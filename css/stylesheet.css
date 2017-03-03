@@ -31,7 +31,11 @@ h2 {
 
 
 h3 {
-	font-color: rgb(112,142,30);
+	color: rgb(112,142,30);
+}
+
+ul {
+	vertical-align: middle;
 }
 
 .navh {
@@ -141,7 +145,7 @@ h3 {
 }
 
 .faim {
-	font-color: rgb(112,142,30);
+	color: rgb(112,142,30);
 }
 
 .caption-big {
@@ -205,12 +209,24 @@ a:focus, a:hover {
 	height: 440px;
 }
 
+.prix {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
 .carousel-control.right {
 	background-image: none;
 }
 
 .carousel-control.left {
 	background-image: none;
+}
+
+.cap-menu {
+	margin-top: 30px;
 }
 
 .dates {
@@ -225,6 +241,7 @@ a:focus, a:hover {
 
 .photothumb {
 	border-radius: 6px;
+	position: relative;
 }
 
 .localisation {
@@ -324,6 +341,22 @@ a:focus, a:hover {
 
 	.caption-small {
 		bottom: 70px;
+	}
+
+	.nav-menu {
+	margin-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 990px) {
+	.taille {
+		margin-bottom: 0;
+		margin-top: -300px;
+	}
+
+	.contenu {
+		margin-bottom: 0;
 	}
 }
 
@@ -433,7 +466,7 @@ a:focus, a:hover {
 	}
 
 	.descriptif {
-	font-size: 15px;
+	font-size: 13px;
 }
 
 @media screen and (min-width: 330px) and (max-width: 360px) {
