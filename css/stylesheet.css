@@ -118,25 +118,30 @@ h3 {
 
 }
 
-.form {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: rgb(205,229,154);
-}
-
-
-
 .formule {
 	border: 1px solid rgb(112,142,30);
 	padding-top: 10px;
-	margin-bottom: 30px;
+	padding-bottom: 10px;
 	border-radius: 10px;
-	height: 440px;
-	
+	height: 300px;
+	margin-bottom: 5px;
+	min-height: 550px;
+	position: relative;
 }
 
 .faim {
 	font-color: rgb(112,142,30);
+}
+
+.texte-formule {
+	padding-top: 30px;
+	background-color: rgb(205,229,154);
+	position: absolute;
+	bottom: 10px;
+}
+
+.picForm {
+
 }
 
 .thumbnail {
@@ -164,7 +169,7 @@ a:focus, a:hover {
 }
 
 .taille {
-	padding-top: 50px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 440px;
 }
@@ -178,15 +183,11 @@ a:focus, a:hover {
 }
 
 .contenu {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .photothumb {
 	border-radius: 6px;
-}
-
-.dates {
-	padding-top: 50px;
 }
 
 .localisation {
@@ -275,6 +276,10 @@ a:focus, a:hover {
 		margin-top: 30px;
 	}
 
+	.formule {
+		height: 200px;
+	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 872px) {
@@ -298,6 +303,7 @@ a:focus, a:hover {
 		padding: 20px;
 	}
 
+<<<<<<< HEAD
 }
 
 @media screen and (min-width: 1180px) and (max-width: 1434px) {
@@ -333,3 +339,9 @@ a:focus, a:hover {
 	font-size: 15px;
 }
 }
+=======
+	.formule {
+		height: 250px;
+	}
+}
+>>>>>>> 0184e10ad19e0be2b7a9ffb1a1543bb38c9dbaed
