@@ -1,0 +1,1 @@
+<!-- formulaire création du nouveau produit avec requête POST vers core.php -->
