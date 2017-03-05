@@ -11,8 +11,15 @@
     <body>
         <div class="container-fluid">
 
+
             <!-- formulaire de connection envoi requête POST connection_bo.php-->
 
+            <?php
+
+            echo 'ceci est un formulaire de connection';
+
+
+            ?>
 
         </div>
 

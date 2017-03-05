@@ -1,7 +1,1 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: julien
- * Date: 05/03/17
- * Time: 15:52
- */
+<!--  affichage des messages laissés par l'utilisateur du site dans le formulaire de contact avec bouton répondre ?-->
