@@ -4,6 +4,9 @@ body,html{
     height: 100%;
 }
 
+.container-fluid {
+    padding: 0;
+}
 /*   -------  Header Styles ------------- */
 
 header h1 {
@@ -25,10 +28,15 @@ header h1 {
 
 /*   ------- Sidebar Styles ------------  */
 
-nav.navbar-inverse.sidebar {
-    height: 100%;
+.sidebar {
+    height: 924px;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        height: 100%;
+    }
+}
 
 /* remove outer padding */
 .main .row{
@@ -123,7 +131,6 @@ nav.sidebar, .main{
     /*gives sidebar width/height*/
     nav.sidebar{
         width: 200px;
-        height: 100%;
         margin-left: -160px;
         float: left;
         z-index: 8000;
@@ -183,9 +190,12 @@ section{
 
 footer {
     position: fixed;
-    height: 100px;
     bottom: 0;
     width: 100%;
+}
+
+.modal-backdrop {
+    z-index: -10;
 }
 
 .copyright { min-height:40px; background-color:#000000;}

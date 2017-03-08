@@ -316,6 +316,10 @@ a:focus, a:hover {
 	color: white;
 }
 
+.texte-mention:focus {
+	color: white;
+}
+
 .bottom_ul {
 	list-style-type:none;
 }
