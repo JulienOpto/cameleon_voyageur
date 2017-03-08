@@ -11,9 +11,12 @@
     <body>
         <div class="container-fluid">
 
-            <?php include 'header_bo.php' ?>
-bla bla
-            <?php include 'footer_bo.php' ?>
+            <?php
+            include 'header_bo.php';
+            include 'nav_bo.php';
+            include 'footer_bo.php';
+
+            ?>
 
         </div>
 
