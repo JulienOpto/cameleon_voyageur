@@ -1,5 +1,3 @@
-<!-- Titre de la page
-       
+<!-- Titre de la page -->
 
 
-       -->
