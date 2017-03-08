@@ -316,8 +316,16 @@ a:focus, a:hover {
 	color: white;
 }
 
+.texte-mention:focus {
+	color: white;
+}
+
 .bottom_ul {
 	list-style-type:none;
+}
+
+bottom_ul li {
+	display: table-cell;
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1620px) {
