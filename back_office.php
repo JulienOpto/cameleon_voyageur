@@ -14,10 +14,13 @@
             <?php
             include 'header_bo.php';
             include 'nav_bo.php';
+
+            
+
+
             include 'footer_bo.php';
 
             ?>
-
         </div>
 
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
