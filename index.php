@@ -34,8 +34,6 @@
 
 <?php include 'carte.php' ?>
 
-<?php include 'contact.php' ?>
-
 <?php include 'footer.php' ?>
 
 		</div>
