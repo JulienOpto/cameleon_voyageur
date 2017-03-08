@@ -29,7 +29,7 @@ header h1 {
 /*   ------- Sidebar Styles ------------  */
 
 .sidebar {
-    height: 924px;
+    height: 920px;
 }
 
 @media (max-width: 768px) {
@@ -133,7 +133,6 @@ nav.sidebar, .main{
         width: 200px;
         margin-left: -160px;
         float: left;
-        z-index: 8000;
         margin-bottom: 0px;
     }
 
@@ -153,6 +152,15 @@ nav.sidebar, .main{
 }
 
 /* .....NavBar: Fully showing nav bar..... */
+.bak-nav {
+
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 18%, rgba(181,186,180,1) 52%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 18%,rgba(181,186,180,1) 52%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 18%,rgba(181,186,180,1) 52%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 );
+    border: none;
+}
 
 @media (min-width: 1330px) {
 
@@ -189,13 +197,8 @@ section{
 /*   -------------  Footer Styles  ----------------   */
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.modal-backdrop {
-    z-index: -10;
 }
 
 .copyright { min-height:40px; background-color:#000000;}
@@ -206,8 +209,3 @@ footer {
 .bottom_ul li a { color:#FFF;  font-size:12px;}
 
 /*   ------------- Formulaire  ----------------   */
-
-.formu {
-
-
-}
