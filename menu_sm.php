@@ -1,259 +1,363 @@
-<!-- tablette -->
+<?php
 
-<div class="row hidden-xs hidden-md hidden-lg taille">
+$request_bagels = "SELECT * FROM bagels";
+$result_bagels = mysqli_query($db, $request_bagels);
+
+$request_rollsco = "SELECT * FROM rollsco";
+$result_rollsco = mysqli_query($db, $request_rollsco);
+
+$request_desserts = "SELECT * FROM desserts";
+$result_desserts = mysqli_query($db, $request_desserts);
+
+$request_boissons = "SELECT * FROM boissons";
+$result_boissons = mysqli_query($db, $request_boissons);
+
+
+echo '<!-- tablette -->
+<!-- choix produits -->
+
+<div class="row hidden-xs hidden-md hidden-lg fond">
 
     <!-- navigation produits -->
     <nav class="col-md-8 col-md-offset-2 col-xs-12">
         <ul class="nav nav-pills nav-menu" role="tablist">
-            <li role="presentation" class="col-md-3 col-xs-6 active"><a href="#slider1sm" class="pill-color" aria-controls="slider1sm" role="tab" data-toggle="pill">Bagels</a></li>
-            <li role="presentation" class="col-md-3 col-xs-6"><a href="#slider2sm" class="pill-color" aria-controls="slider2sm" role="tab" data-toggle="pill">Rolls & Co</a></li>
-            <li role="presentation" class="col-md-3 col-xs-6"><a href="#dessertssm" class="pill-color" aria-controls="dessertssm" role="tab" data-toggle="pill">Desserts</a></li>
-            <li role="presentation" class="col-md-3 col-xs-6"><a href="#boissonssm" class="pill-color" aria-controls="boissonssm" role="tab" data-toggle="pill">Boissons</a></li>
+            <li role="presentation" class="col-md-3 col-xs-6 active"><a href="#slider1_sm" class="pill-color" aria-controls="slider1_sm" role="tab" data-toggle="pill">Bagels</a></li>
+            <li role="presentation" class="col-md-3 col-xs-6"><a href="#slider2_sm" class="pill-color" aria-controls="slider2_sm" role="tab" data-toggle="pill">Rolls & Co</a></li>
+            <li role="presentation" class="col-md-3 col-xs-6"><a href="#slider3_sm" class="pill-color" aria-controls="desserts_sm" role="tab" data-toggle="pill">Desserts</a></li>
+            <li role="presentation" class="col-md-3 col-xs-6"><a href="#slider4_sm" class="pill-color" aria-controls="boissons_sm" role="tab" data-toggle="pill">Boissons</a></li>
         </ul>
     </nav>
 </div>
 
-<div class="row hidden-xs hidden-md hidden-lg">
-    <div class="col-xs-12 tab-content contenu">
 
-        <!-- carousel bagels-->
-        <div id="slider1sm" class="carousel slide tab-pane fade in active zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+<div class="row hidden-xs hidden-md hidden-lg taille">
+    <div class="col-xs-12 tab-content">
 
-            <!-- points sous caroussel -->
-            <!--	<ol class="carousel-indicators">
-                    <li data-target="#slider1sm" data-slide-to="0" class="active"></li>
-                    <li data-target="#slider1sm" data-slide-to="1"></li>
-                    <li data-target="#slider1sm" data-slide-to="2"></li>
-                </ol>   -->
+        ';
+
+
+//slider bagels
+
+
+
+$print_bagels = '';
+$counter_bagels = 0;
+$counter_div = 0;
+
+$print_bagels .= '
+        <div id="slider1_sm" class="carousel slide tab-pane fade in active zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+
 
             <!-- contenu  -->
-            <div class="carousel-inner" role="listbox">
-
-                <!-- 1er volet -->
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/Feta.r.png" alt="Feta">
-                            <div class="caption">
-                                <h3>Feta valise</h3>
-                                <p>Feta, tomates, concombres, olives, oignons, roquette, basilic, câpres, huile d'olive</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/manhattan.r.png" alt="Manhattan">
-                            <div class="caption">
-                                <h3>Manhattan maboul</h3>
-                                <p>Salade, tomates, oignons, cheddar, steack haché, sauce "blood on fire" (épicé)</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2eme volet -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/dinde.r.png" alt="Dinde">
-                            <div class="caption">
-                                <h3>Dinde de toi</h3>
-                                <p>Roquette, oignons frits, tomates, pickles, cheddar, dinde, cream cheese, moutarde au miel</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/lox.r.png" alt="Lox">
-                            <div class="caption">
-                                <h3>Lox on the road</h3>
-                                <p>Cream cheese, roquette, pulpe de citron, ciboulette, oignons rouges, saumon fumé, cream cheese</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-inner" role="listbox">';
 
 
-                <!-- 3eme volet -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/Serano.r.png" alt="Serano">
-                            <div class="caption">
-                                <h3>Serano de Bergerac</h3>
-                                <p>Cream cheese, roquette, tomates, jambon cru, chèvre gratiné au miel</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/poulet.r.png" alt="Poulet">
-                            <div class="caption">
-                                <h3>Poulet Voyageur</h3>
-                                <p>Oignons frits, roquette, tomates, pickles, cheddar, blanc de poulet, cream cheese, sauce moutarde au miel</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+while ($data_bagels = mysqli_fetch_assoc($result_bagels))
+{
+    if ($counter_bagels%2 == 0 || $counter_bagels==0) {
 
+        if ($counter_div>0) {
+            $print_bagels .= '
+                        </div>
+                    </div>';
+        }
+        $print_bagels .= '
+            
+                    <div class="item';
+        if ($counter_bagels==0) {
+            $print_bagels .= ' active';
+        }
+        $print_bagels .= '">
+                        <div class="row">';
+        $counter_div++;
+    }
+
+    $print_bagels .= '
+                            <div class="col-sm-offset-2';
+
+    $print_bagels .=' col-sm-3 photothumb thumbnail">
+                                <img src="'.$data_bagels['photo'].'" alt="'.$data_bagels['name'].'">
+                                <div class="caption">
+                                    <h3>'.$data_bagels['name'].'</h3>
+                                    <p>'.$data_bagels['description'].'</p>
+                                    <p class="prix">'.$data_bagels['price'].'</p>
+                                </div>
+                            </div>';
+
+
+
+    $counter_bagels++;
+}
+
+$print_bagels .= '
+                        </div>
+                    </div>';
+
+$print_bagels .='
+            </div>';
+
+if ($counter_bagels > 2) {
+    $print_bagels .= '
             <!-- flèches de contrôle -->
-            <a class="carousel-control left" href="#slider1sm" data-slide="prev">
+            <a class="carousel-control left" href="#slider1_sm" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="carousel-control right" href="#slider1sm" data-slide="next">
+            <a class="carousel-control right" href="#slider1_sm" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
+            </a>';
+}
+$print_bagels .='
+            </div>';
 
-        <!-- caroussel rolls -->
-        <div id="slider2sm" class="carousel slide tab-pane fade zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
 
-            <!-- points sous caroussel -->
-            <!--	<ol class="carousel-indicators">
-                    <li data-target="#slider2sm" data-slide-to="0" class="active"></li>
-                    <li data-target="#slider2sm" data-slide-to="1"></li>
-                    <li data-target="#slider2sm" data-slide-to="2"></li>
-                </ol>  -->
+echo $print_bagels;
+
+
+
+
+
+// slider rolls
+
+$print_rollsco = '';
+$counter_rollsco = 0;
+$counter_div = 0;
+
+$print_rollsco .= '
+        <div id="slider2_sm" class="carousel slide tab-pane fade in zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+
 
             <!-- contenu  -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox">';
 
-                <!-- 1er volet -->
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/chiken.r.png" alt="Chicken">
-                            <div class="caption">
-                                <h3>Chicken Rolls</h3>
-                                <p>Poulet teriyaki, avocat, concombre</p>
-                                <p class="prix">4.50€</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/kimbap.r.png" alt="Kimbap">
-                            <div class="caption">
-                                <h3>Kimbap</h3>
-                                <p>Thonade, carotte, concombre, oeuf, radis</p>
-                                <p class="prix">6.60€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 2eme volet -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/Salade.r.png" alt="Salade">
-                            <div class="caption">
-                                <h3>Petite ou grande salade</h3>
-                                <p>Coleslaw, grecque</p>
-                                <p class="prix">2.00€ / 4.00€</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/rock.r.png" alt="Rock">
-                            <div class="caption">
-                                <h3>Le Rock'N'Roll</h3>
-                                <p>Saumon, avocat, concombre</p>
-                                <p class="prix">5.00€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+while ($data_rollsco = mysqli_fetch_assoc($result_rollsco))
+{
+    if ($counter_rollsco%2 == 0 || $counter_rollsco==0) {
 
-                <!-- 3eme volet -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/mandu.r.png" alt="Mandu">
-                            <div class="caption">
-                                <h3>Mandu</h3>
-                                <p>Ravioli coréen (x6)</p>
-                                <p class="prix">2.50€</p>
-                            </div>
+        if ($counter_div>0) {
+            $print_rollsco .= '
                         </div>
-                        <div class="col-sm-offset-2 col-sm-3 photothumb thumbnail">
-                            <img src="img/Menu/thon.r.png" alt="Thon">
-                            <div class="caption">
-                                <h3>Thon thon rolls</h3>
-                                <p>Thonade, avocat, concombre</p>
-                                <p class="prix">5.00€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </div>';
+        }
+        $print_rollsco .= '
+            
+                    <div class="item';
+        if ($counter_rollsco==0) {
+            $print_rollsco .= ' active';
+        }
+        $print_rollsco .= '">
+                        <div class="row">';
+        $counter_div++;
+    }
 
+    $print_rollsco .= '
+                            <div class="col-sm-offset-2';
+
+
+    $print_rollsco .=' col-sm-3 photothumb thumbnail">
+                                <img src="'.$data_rollsco['photo'].'" alt="'.$data_rollsco['name'].'">
+                                <div class="caption">
+                                    <h3>'.$data_rollsco['name'].'</h3>
+                                    <p>'.$data_rollsco['description'].'</p>
+                                    <p class="prix">'.$data_rollsco['price'].'</p>
+                                </div>
+                            </div>';
+
+
+
+    $counter_rollsco++;
+}
+
+$print_rollsco .= '
+                        </div>
+                    </div>';
+
+$print_rollsco .='
+            </div>';
+
+if ($counter_rollsco > 2) {
+    $print_rollsco .= '
             <!-- flèches de contrôle -->
-            <a class="carousel-control left" href="#slider2sm" data-slide="prev">
+            <a class="carousel-control left" href="#slider2_sm" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="carousel-control right" href="#slider2sm" data-slide="next">
+            <a class="carousel-control right" href="#slider2_sm" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>';
+}
+$print_rollsco .='
+                    </div>';
+
+
+echo $print_rollsco;
+
+
+
+
+
+// slider desserts
+
+$print_desserts = '';
+$counter_desserts = 0;
+$counter_div = 0;
+
+$print_desserts .= '
+        <div id="slider3_sm" class="carousel slide tab-pane fade in zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+
+
+            <!-- contenu  -->
+            <div class="carousel-inner" role="listbox">';
+
+
+while ($data_desserts = mysqli_fetch_assoc($result_desserts))
+{
+    if ($counter_desserts%2 == 0 || $counter_desserts==0) {
+
+        if ($counter_div>0) {
+            $print_desserts .= '
+                        </div>
+                    </div>';
+        }
+        $print_desserts .= '
+            
+                    <div class="item';
+        if ($counter_desserts==0) {
+            $print_desserts .= ' active';
+        }
+        $print_desserts .= '">
+                        <div class="row">';
+        $counter_div++;
+    }
+
+    $print_desserts .= '
+                            <div class="col-sm-offset-2';
+
+
+    $print_desserts .=' col-sm-3 photothumb thumbnail">
+                                <img src="'.$data_desserts['photo'].'" alt="'.$data_desserts['name'].'">
+                                <div class="caption">
+                                    <h3>'.$data_desserts['name'].'</h3>
+                                    <p>'.$data_desserts['description'].'</p>
+                                    <p class="prix">'.$data_desserts['price'].'</p>
+                                </div>
+                            </div>';
+
+
+
+    $counter_desserts++;
+}
+
+$print_desserts .= '
+                        </div>
+                    </div>';
+
+$print_desserts .='
+            </div>';
+
+if ($counter_desserts > 2) {
+    $print_desserts .= '
+            <!-- flèches de contrôle -->
+            <a class="carousel-control left" href="#slider3_sm" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-        </div>
+            <a class="carousel-control right" href="#slider3_sm" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>';
+}
+$print_desserts .='
+                    </div>';
 
-        <!-- Thumbnails Desserts -->
-        <div class="tab-pane zone-menu fade" id="dessertssm" role="tabpanel">
-            <div class="row">
-                <div class="thumbnail col-sm-offset-2 col-sm-2 photothumb">
-                    <img src="img/thumb_cheesecake_big.jpg" alt="cheesecake">
-                    <div class="caption cap-menu">
-                        <h3>Cheesecake</h3>
-                        <p>Son parfum évolue au fil des saisons</p>
-                        <p class="prix">3.50€</p>
-                    </div>
-                </div>
-                <div class="thumbnail col-sm-offset-1 col-sm-2 photothumb">
-                    <img src="img/thumb_muffin_big.jpg" alt="muffin">
-                    <div class="caption cap-menu">
-                        <h3>Muffin</h3>
-                        <p>Blueberry ou Pépites de chocolat</p>
-                        <p class="prix">2.70€</p>
-                    </div>
-                </div>
-                <div class="thumbnail col-sm-offset-1 col-sm-2 photothumb">
-                    <img src="img/thumb_cookies_big.jpg" alt="cookies">
-                    <div class="caption cap-menu">
-                        <h3>Cookies</h3>
-                        <p>Pépites de chocolat ou Tout chocolat</p>
-                        <p class="prix">2.50€</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Thumbnails Boissons -->
-        <div class="tab-pane zone-menu fade" id="boissonssm" role="tabpanel">
-            <div class="row">
-                <div class="thumbnail col-sm-offset-2 col-sm-2 photothumb">    <!-- sodas -->
-                    <img src="img/thumb_sodas_big.jpg" alt="sodas">
-                    <div class="caption cap-menu">
-                        <h3>Sodas</h3>
-                        <p>Coca-cola, Sprite, Fanta, Ice Tea 33cl</p>
-                        <p class="prix">1.50€</p>
-                    </div>
-                </div>
-                <div class="thumbnail col-sm-offset-1 col-sm-2 photothumb">    <!-- eau -->
-                    <img src="img/thumb_eau_big.jpg" alt="eau">
-                    <div class="caption cap-menu">
-                        <h3>Eaux</h3>
-                        <p>Evian, Cristalline, Perrier. 50cl</p>
-                        <p class="prix">1.50€</p>
-                    </div>
-                </div>
-                <div class="thumbnail col-sm-offset-1 col-sm-2 photothumb">    <!-- expresso -->
-                    <img src="img/thumb_expresso_big.jpg" alt="expresso">
-                    <div class="caption cap-menu">
-                        <h3>Expresso</h3>
-                        <p>Un expresso fin et corsé</p>
-                        <p class="prix">1.50€</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+echo $print_desserts;
 
-    </div> <!-- fin du tab-content -->
-</div> <!-- fin de la row globale des menus -->
+
+
+
+// slider boissons
+
+$print_boissons = '';
+$counter_boissons = 0;
+$counter_div = 0;
+
+$print_boissons .= '
+        <div id="slider4_sm" class="carousel slide tab-pane fade in zone-menu" data-ride="carousel" data-interval="false" role="tabpanel">
+
+
+            <!-- contenu  -->
+            <div class="carousel-inner" role="listbox">';
+
+
+while ($data_boissons = mysqli_fetch_assoc($result_boissons))
+{
+    if ($counter_boissons%2 == 0 || $counter_boissons==0) {
+
+        if ($counter_div>0) {
+            $print_boissons .= '
+                        </div>
+                    </div>';
+        }
+        $print_boissons .= '
+            
+                    <div class="item';
+        if ($counter_boissons==0) {
+            $print_boissons .= ' active';
+        }
+        $print_boissons .= '">
+                        <div class="row">';
+        $counter_div++;
+    }
+
+    $print_boissons .= '
+                            <div class="col-sm-offset-2';
+
+
+    $print_boissons .=' col-sm-3 photothumb thumbnail">
+                                <img src="'.$data_boissons['photo'].'" alt="'.$data_boissons['name'].'">
+                                <div class="caption">
+                                    <h3>'.$data_boissons['name'].'</h3>
+                                    <p>'.$data_boissons['description'].'</p>
+                                    <p class="prix">'.$data_boissons['price'].'</p>
+                                </div>
+                            </div>';
+
+
+
+    $counter_boissons++;
+}
+
+$print_boissons .= '
+                        </div>
+                    </div>';
+
+$print_boissons .='
+            </div>';
+
+if ($counter_boissons > 2) {
+    $print_boissons .= '
+            <!-- flèches de contrôle -->
+            <a class="carousel-control left" href="#slider4_sm" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#slider4_sm" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>';
+}
+$print_boissons .='
+                    </div>';
+
+
+echo $print_boissons;
+
+
+
+
+
+
+echo '
+    </div>
+</div>';
+
+?>
+
+
+
