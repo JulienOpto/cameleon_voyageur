@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img alt="logo" src="img/logo-xs.png" class="logo-mini">
+                <img alt="logo" id="logo-mini" src="img/logo-xs.png" class="logo-mini hidden">
             </a>
             <p class="n-tel">06.69.15.43.08</p>
         </div>

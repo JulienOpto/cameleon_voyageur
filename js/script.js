@@ -1,10 +1,10 @@
 $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 20){
-            $('#navbar').addClass('navbar-color');
+        if (scroll >= 250){
+            $('#logo-mini').removeClass('hidden');
         }else{
-            $('#navbar').removeClass('navbar-color');
+            $('#logo-mini').addClass('hidden');
         }
     });
 });

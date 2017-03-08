@@ -14,19 +14,19 @@
 
             <?php
             include 'nav_bo.php';
+
             ?>
 
             <div class="main">
 
                 <?php
                 include 'header_bo.php';
+
+
+                include 'footer_bo.php';
                 ?>
 
             </div>
-
-                <?php
-                include 'footer_bo.php';
-                ?>
 
         </div>
 
