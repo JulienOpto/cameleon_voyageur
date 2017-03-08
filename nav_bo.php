@@ -17,11 +17,11 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
                     <ul class="dropdown-menu forAnimate" role="menu">
-                        <li><a href="#">Ajouter un produit</a></li>
-                        <li><a href="#">Liste des produits</a></li>
+                        <li><a href="form_bo.php">Ajouter un produit</a></li>
+                        <li><a href="liste_bo.php">Liste des produits</a></li>
                     </ul>
                 </li>
-                <li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                <li ><a href="messages_bo.php">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
             </ul>
         </div>
     </div>

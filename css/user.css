@@ -265,8 +265,10 @@ a:focus, a:hover {
 }
 
 .photothumb {
-	border-radius: 6px;
+	border-radius: 10px;
 	position: relative;
+	border: 4px solid rgb(112,142,30);
+	background-color: rgb(255,255,255);
 }
 
 .localisation {
@@ -322,6 +324,10 @@ a:focus, a:hover {
 
 .bottom_ul {
 	list-style-type:none;
+}
+
+bottom_ul li {
+	display: table-cell;
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1620px) {
@@ -384,8 +390,7 @@ a:focus, a:hover {
 
 @media screen and (max-width: 990px) {
 	.taille {
-		margin-bottom: 0;
-		margin-top: -300px;
+		margin-top: -50;
 	}
 
 	.contenu {
