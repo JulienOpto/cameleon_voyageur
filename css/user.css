@@ -316,6 +316,10 @@ a:focus, a:hover {
 	color: white;
 }
 
+.bottom_ul {
+	list-style-type:none;
+}
+
 @media only screen and (min-width: 991px) and (max-width: 1620px) {
     
 	.formule {
@@ -551,5 +555,25 @@ a:focus, a:hover {
 	.btn-retrouve {
 		font-size: 14px;
 	}
-
 }
+
+/*   ----------------- Formulaire Contact -------------------------  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

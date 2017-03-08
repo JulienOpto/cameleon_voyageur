@@ -16,13 +16,41 @@
     </div>
 
 </div>
+
 <div class="row mentions">
 
     <div class="col-xs-10 col-xs-offset-1">
+        <div class="row">
         <p>Tous droits réservés Team Kung Fu Panda</p>
-        <a href="#" class="texte-mention"><p>Mentions légales</p></a>
+        </div>
+        <div class="row">
+            <ul class="bottom_ul">
+                <li><a href="#" class="texte-mention"><p>Mentions légales</p></a></li>
+                <li><a href="#" class="texte-contact" data-toggle="modal" data-target="#adminContact"><p>Nous contacter</p></a></li>
+            </ul>
+        </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="adminContact" tabindex="-1" aria-labelledby="adminContact">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="titre-modal">Contactez nous</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><?php include 'contact.php' ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-xs-1 hidden-xs">
         <img src="img/WCS.r.png" class="img-responsive">
     </div>
+
 </div>
+
