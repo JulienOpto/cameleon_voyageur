@@ -26,7 +26,7 @@
         <div class="row">
             <ul class="bottom_ul">
                 <li><a href="#" class="texte-mention"><p>Mentions légales</p></a></li>
-                <li><a href="#" class="texte-contact" data-toggle="modal" data-target="#adminContact"><p>Nous contacter</p></a></li>
+                <li><a href="#" class="texte-mention" data-toggle="modal" data-target="#adminContact"><p>Nous contacter</p></a></li>
             </ul>
         </div>
     </div>

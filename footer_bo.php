@@ -1,6 +1,7 @@
 <!-- footer de l'admin -->
 
 <footer>
+
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -17,7 +18,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal">
+    <div class="modal fade" id="contactModal" tabindex="-10" aria-labelledby="contactModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
