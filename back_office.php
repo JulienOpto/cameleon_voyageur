@@ -12,7 +12,7 @@
         <div class="container-fluid">
 
             <?php include 'header_bo.php' ?>
-
+bla bla
             <?php include 'footer_bo.php' ?>
 
         </div>

@@ -9,18 +9,14 @@
     </head>
 
     <body>
-        <div class="container-fluid">
-
-
+        <div class="container">
+            <br /><br />
             <!-- formulaire de connection envoi requête POST connection_bo.php-->
-
-            <?php
-
-            echo 'ceci est un formulaire de connection';
-
-
-            ?>
-
+            <form method="post" action="connection_bo.php" class="text-center">
+                <input type="text" name="id" placeholder="Identifiant" autofocus>
+                <input type="password" name="pw" placeholder="Mot de passe"><br /><br /><br />
+                <button type="submit" value="submit" class="btn btn-default">Se connecter</button>
+            </form>
         </div>
 
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
