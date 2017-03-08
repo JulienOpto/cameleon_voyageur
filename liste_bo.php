@@ -1,6 +1,7 @@
 
 <?php
 
+include 'header_bo.php';
 include 'connect.php';
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);
 // Change character set to utf8
@@ -36,6 +37,7 @@ while($data = mysqli_fetch_assoc($res))
 
 echo '</div>';
 
-echo '<a href="ficheEleve.php" class="btn btn-primary">Ajouter un élève</a>';
+
+include 'footer_bo.php'
 
 ?>
