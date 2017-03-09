@@ -15,7 +15,7 @@
             $price = $data['price'];
             $name = $data['name'];
             $description = $data['description'];
-            $id = $data['id'];
+            $id = $data['idb'];
         }
         $textButton = 'Modifier';
     }
@@ -30,7 +30,7 @@
             $price = $data['price'];
             $name = $data['name'];
             $description = $data['description'];
-            $id = $data['id'];
+            $id = $data['idr'];
         }
         $textButton = 'Modifier';
     }
@@ -45,7 +45,7 @@
             $price = $data['price'];
             $name = $data['name'];
             $description = $data['description'];
-            $id = $data['id'];
+            $id = $data['idd'];
         }
         $textButton = 'Modifier';
     }
@@ -60,7 +60,7 @@
             $price = $data['price'];
             $name = $data['name'];
             $description = $data['description'];
-            $id = $data['id'];
+            $id = $data['idbo'];
         }
         $textButton = 'Modifier';
     }
