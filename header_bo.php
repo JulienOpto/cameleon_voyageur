@@ -19,7 +19,9 @@
             <div class="main">
                 <header>
 
-                    <h1>Bienvenue dans le Back-office du Caméléon voyageur !</h1>
+                    <div class="page-header">
+                        <h1>Bienvenue dans le Back-office du Caméléon voyageur !</h1>
+                    </div>
 
                 </header>
 

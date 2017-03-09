@@ -1,7 +1,6 @@
 <?php
 
-include 'connect.php';
-$bdd = mysqli_connect(SERVER, USER, PASS, DB);
+$bdd = mysqli_connect('localhost', 'isabelle', 'I$abe77e', 'cameleon');
 
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
