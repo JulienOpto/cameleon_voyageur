@@ -3,7 +3,10 @@
 <?php
 
 include 'connect.php';
+
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);
+mysqli_set_charset($bdd,"utf8");
+
 
 
 $resultat = mysqli_query($bdd, 'SELECT * FROM messages');
