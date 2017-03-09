@@ -1,12 +1,12 @@
 <?php
 include 'header_bo.php';
-?>
+
+echo '<div class="background"></div>';
 
 
 
 
 
 
-<?php
 include 'footer_bo.php';
 ?>

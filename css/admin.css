@@ -8,15 +8,18 @@ body,html{
 .container-fluid {
     padding: 0;
 }
+
+.background {
+    height:770px;
+    background-image: url("../img/externalisation-back-office.jpg");
+    margin-top: -50px;
+}
 /*   -------  Header Styles ------------- */
 
 header h1 {
     text-align: center;
 }
 
-/*.formu {*/
-    /*margin-bottom: 285px;*/
-/*}*/
 
 @media screen and (max-width: 768px) {
     header h1 {
@@ -48,6 +51,7 @@ header h1 {
     padding: 0px;
     margin: 0px;
 }
+
 
 /*Remove rounded coners*/
 
@@ -222,5 +226,7 @@ footer {
 .bottom_ul li a { color:#FFF;  font-size:12px;}
 
 /*   ------------- Liste messages  ----------------   */
-
+.thumbnail {
+    margin-bottom: 50px;
+}
 
