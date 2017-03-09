@@ -6,10 +6,12 @@
     mysqli_set_charset($bdd, 'utf8');
     $textButton = 'Créer';
     $name = $price = $photo = $description = $type = $id='';
+    $hid= '';
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        $req = "SELECT * FROM bagels WHERE id=$id";
+        $typ = $_GET['valu'];
+        $req = "SELECT * FROM $typ WHERE id=$id";
         $res = mysqli_query($bdd, $req);
         while($data = mysqli_fetch_assoc($res)) {
             $photo = $data['photo'];
@@ -19,6 +21,7 @@
             $id = $data['id'];
         }
         $textButton = 'Modifier';
+        $hid = 'hidden';
     }
 
 
@@ -43,10 +46,8 @@
 
 
             if ($id) {
-                print_r($id);
                 $req = "UPDATE $type SET 
                     name='$name',description='$description',price='$price',photo='$photo' WHERE id=$id";
-                echo $req;
             } else {
                 $req = "INSERT INTO $type (name, description, price, photo) VALUES 
                     ('$name', '$description', '$price', '$photo')";
@@ -73,8 +74,8 @@
 
             echo '    <form method="POST" action="form_bo.php">
                         <div class="form-group">
-                            <label for="type">Produit</label>
-                            <select class="form-control" name="type" id="type">';
+                            <label for="type" class="'.$hid.'">Produit</label>
+                            <select class="form-control '.$hid.'" name="type" id="type">';
 
             foreach ($tabType as $label=>$value) {
                 $selected='';
@@ -107,7 +108,7 @@
                             <input class="form-control" type="text"  value="'.$photo.'"  name="photo" id="photo"/>
                         </div>                       
                             <input type="hidden" name="id" value="'.$id.'"/>
-                            <input class="btn btn-default" type="reset" name="btnReset" value="Vider" />
+                            <input class="btn btn-default '.$hid.'" type="reset" name="btnReset" value="Vider" />
                             <input class="btn btn-success" type="submit" name="btnSubmit" value="'.$textButton.'" />
                     </form>';
 ?>
