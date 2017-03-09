@@ -20,7 +20,7 @@ echo '<h2>Liste</h2>';
 
     <?php
 
-    $req = "SELECT name id, description, price, photo, name
+    $req = "SELECT id, name, description, price, photo, name
                 FROM bagels;";
     $res = mysqli_query($bdd, $req);
 
@@ -33,11 +33,12 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3><a href="detailEleve.php?id='.$data['id'].'">'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
-                    <form method="POST" action="deleteEleve.php">
+                    <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
@@ -50,7 +51,7 @@ echo '<h2>Liste</h2>';
           <div id="rollsco" class="tab-pane fade in" role="tabpanel">';
 
 
-    $req = "SELECT name id, description, price, photo, name
+    $req = "SELECT id, name, description, price, photo, name
                 FROM rollsco;";
     $res = mysqli_query($bdd, $req);
 
@@ -63,11 +64,12 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3><a href="detailEleve.php?id='.$data['id'].'">'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
-                    <form method="POST" action="deleteEleve.php">
+                    <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
@@ -80,7 +82,7 @@ echo '<h2>Liste</h2>';
           <div id="desserts" class="tab-pane  fade in" role="tabpanel">';
 
 
-    $req = "SELECT name id, description, price, photo, name
+    $req = "SELECT id, name, description, price, photo, name
                 FROM desserts;";
     $res = mysqli_query($bdd, $req);
 
@@ -93,11 +95,12 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3><a href="detailEleve.php?id='.$data['id'].'">'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
-                    <form method="POST" action="deleteEleve.php">
+                    <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>                       
                     </form>
                   </div>
                 </div>
@@ -110,7 +113,7 @@ echo '<h2>Liste</h2>';
           <div id="boissons" class="tab-pane fade in " role="tabpanel">';
 
 
-    $req = "SELECT name id, description, price, photo, name
+    $req = "SELECT id, name, description, price, photo, name
                 FROM boissons;";
     $res = mysqli_query($bdd, $req);
 
@@ -123,11 +126,12 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3><a href="detailEleve.php?id='.$data['id'].'">'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
-                    <form method="POST" action="deleteEleve.php">
+                    <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
