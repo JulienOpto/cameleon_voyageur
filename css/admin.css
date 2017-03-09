@@ -211,4 +211,30 @@ footer {
 
 /*   ------------- Liste messages  ----------------   */
 
+table thead {
+    font-size: 20px;
+    font-style: bold;
+    color: darkseagreen;
+
+}
+
+table tr {
+    border: 2px solid gray;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+}
+
+table td {
+    width: 18%;
+    padding: 5px;
+    text-align: left;
+}
+
+/*   ------- home back-office -------------- */
+
+.vid {
+    text-align: center;
+}
+
 
