@@ -26,7 +26,7 @@ echo '<h2>Liste</h2>';
 
     $valu = 'bagels';
 
-    echo '<div class="row">';
+    echo '<div class="row taille_div">';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
@@ -39,7 +39,7 @@ echo '<h2>Liste</h2>';
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="type" value="bagels"/>
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
-                        <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <input  class="btn btn-danger" type="submit" value="Supprimer" name="delete" data-toggle="modal" data-target="#confirmModal"/>
                         <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                     
@@ -60,7 +60,7 @@ echo '<h2>Liste</h2>';
 
     $valu = 'rollsco';
 
-    echo '<div class="row">';
+    echo '<div class="row taille_div">';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
@@ -73,7 +73,7 @@ echo '<h2>Liste</h2>';
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="rollsco"/>
-                        <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <input  class="btn btn-danger" type="submit" value="Supprimer" name="delete" data-toggle="modal" data-target="#confirmModal"/>
                         <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
@@ -93,7 +93,7 @@ echo '<h2>Liste</h2>';
 
     $valu = 'desserts';
 
-    echo '<div class="row">';
+    echo '<div class="row taille_div">';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
@@ -106,7 +106,7 @@ echo '<h2>Liste</h2>';
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="desserts"/>
-                        <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <input  class="btn btn-danger" type="submit" value="Supprimer" name="delete" data-toggle="modal" data-target="#confirmModal"/>
                         <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>                       
                     </form>
                   </div>
@@ -126,7 +126,7 @@ echo '<h2>Liste</h2>';
 
     $valu = 'boissons';
 
-    echo '<div class="row">';
+    echo '<div class="row taille_div">';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
@@ -139,7 +139,7 @@ echo '<h2>Liste</h2>';
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="boissons"/>
-                        <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
+                        <input  class="btn btn-danger" type="submit" value="Supprimer" name="delete" data-toggle="modal" data-target="#confirmModal"/>
                         <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
@@ -150,6 +150,8 @@ echo '<h2>Liste</h2>';
     }
 
 echo '
+
+
       </div></div></div> ';
 
 include 'footer_bo.php'

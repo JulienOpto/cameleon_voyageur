@@ -16,30 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `desserts`
+-- Table structure for table `boissons`
 --
 
-DROP TABLE IF EXISTS `desserts`;
+DROP TABLE IF EXISTS `boissons`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `desserts` (
-  `id_desserts` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `boissons` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `description` varchar(255) NOT NULL,
   `price` varchar(25) NOT NULL,
   `photo` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_desserts`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `desserts`
+-- Dumping data for table `boissons`
 --
 
-LOCK TABLES `desserts` WRITE;
-/*!40000 ALTER TABLE `desserts` DISABLE KEYS */;
-INSERT INTO `desserts` VALUES (1,'Cheessecake maison','Son parfum évolue au fil des saisons','3.50€','img/thumb_cheesecake_big.jpg'),(2,'Muffin','Blueberry ou pépites de chocolat','2.70€','img/thumb_muffin_big.jpg'),(3,'Cookies','Pépites de chocolat ou tout chocolat','2.50€','img/thumb_cookies_big.jpg');
-/*!40000 ALTER TABLE `desserts` ENABLE KEYS */;
+LOCK TABLES `boissons` WRITE;
+/*!40000 ALTER TABLE `boissons` DISABLE KEYS */;
+INSERT INTO `boissons` VALUES (1,'Sodas','Coca-cola, Sprite, Fanta, Ice Tea 33cl','1.50€','img/thumb_sodas_big.jpg'),(2,'Eaux','Evian, Cristalline, Perrier. 50cl','1.50€','img/thumb_eau_big.jpg'),(3,'Expresso','Un expresso fin et corsé','1.50€','img/thumb_expresso_big.jpg');
+/*!40000 ALTER TABLE `boissons` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-08 18:04:57
+-- Dump completed on 2017-03-09 19:09:59

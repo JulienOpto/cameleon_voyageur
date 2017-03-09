@@ -40,6 +40,11 @@
             $id = $postClean['id'];
             $type = $postClean['type'];
 
+            if (!$photo) {
+                $photo = 'http://placehold.it/200x200';
+            }
+
+
             if ($id) {
                 $req = "UPDATE $type SET 
                     name='$name',description='$description',price='$price',photo='$photo' WHERE id=$id";
@@ -99,7 +104,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="photo">Lien Image:</label>
+                            <label for="photo">Lien Image (laisser vide si vous désirez une image par défaut) :</label>
                             <input class="form-control" type="text"  value="'.$photo.'"  name="photo" id="photo"/>
                         </div>                       
                             <input type="hidden" name="id" value="'.$id.'"/>

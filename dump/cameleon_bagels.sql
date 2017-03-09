@@ -16,30 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `rollsco`
+-- Table structure for table `bagels`
 --
 
-DROP TABLE IF EXISTS `rollsco`;
+DROP TABLE IF EXISTS `bagels`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `rollsco` (
-  `id_rollsco` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `bagels` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `description` varchar(255) NOT NULL,
   `price` varchar(25) NOT NULL,
   `photo` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_rollsco`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `rollsco`
+-- Dumping data for table `bagels`
 --
 
-LOCK TABLES `rollsco` WRITE;
-/*!40000 ALTER TABLE `rollsco` DISABLE KEYS */;
-INSERT INTO `rollsco` VALUES (1,'Chicken Rolls','Poulet teriyaki, avocat, concombre','4.50€','img/Menu/chiken.r.png'),(2,'Thon thon Rolls','Thonade, avocat, concombre','5.00€','img/Menu/thon.r.png'),(3,'Rock\'n\'Rolls','Saumon, avocat, concombre','5.00€','img/Menu/rock.r.png'),(4,'Kimbap','Thonade, carotte, concombre, oeuf, radis','6.60€','img/Menu/kimbap.r.png'),(5,'Mandu','Ravioli coréen (x6)','2.50€','img/Menu/mandu.r.png'),(6,'Salade','Coleslaw, grecque','2.00€ / 4.00€','img/Menu/Salade.r.png');
-/*!40000 ALTER TABLE `rollsco` ENABLE KEYS */;
+LOCK TABLES `bagels` WRITE;
+/*!40000 ALTER TABLE `bagels` DISABLE KEYS */;
+INSERT INTO `bagels` VALUES (1,'Feta valise','Feta, tomates, concombres, olives, oignons, roquette, basilic, câpres, huile d\'olive','6.60€','img/Menu/Feta.r.png'),(2,'Lox on the road','Cream cheese, roquette, pulpe de citron, ciboulette, oignons rouges, saumon fumé, cream cheese','6.60€','img/Menu/lox.r.png'),(3,'Serano de Bergerac','Cream cheese, roquette, tomates, jambon cru, chèvre gratiné au miel','6.60€','img/Menu/Serano.r.png'),(4,'Dinde de toi','Roquette, oignons frits, tomates, pickles, cheddar, dinde, cream cheese, moutarde au miel','6.60€','img/Menu/dinde.r.png'),(5,'Poulet voyageur','Oignons frits, roquette, tomates, pickles, cheddar, blanc de poulet, cream cheese, sauce moutarde au miel','6.60€','img/Menu/poulet.r.png'),(6,'Manhattan maboul','Salade, tomates, oignons, cheddar, steack haché, sauce \"blood on fire\" (épicé)','6.60€','img/Menu/manhattan.r.png');
+/*!40000 ALTER TABLE `bagels` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-08 18:04:57
+-- Dump completed on 2017-03-09 19:09:59

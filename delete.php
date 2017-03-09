@@ -1,6 +1,5 @@
 <?php
 
-print_r($_POST);
 
 include 'connect.php';
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);

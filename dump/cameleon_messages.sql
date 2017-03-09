@@ -16,30 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `boissons`
+-- Table structure for table `messages`
 --
 
-DROP TABLE IF EXISTS `boissons`;
+DROP TABLE IF EXISTS `messages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `boissons` (
-  `id_boissons` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `price` varchar(25) NOT NULL,
-  `photo` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_boissons`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+CREATE TABLE `messages` (
+  `id_messages` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(45) NOT NULL,
+  `prenom` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `message` text NOT NULL,
+  `note` int(11) NOT NULL,
+  PRIMARY KEY (`id_messages`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `boissons`
+-- Dumping data for table `messages`
 --
 
-LOCK TABLES `boissons` WRITE;
-/*!40000 ALTER TABLE `boissons` DISABLE KEYS */;
-INSERT INTO `boissons` VALUES (1,'Sodas','Coca-cola, Sprite, Fanta, Ice Tea 33cl','1.50€','img/thumb_sodas_big.jpg'),(2,'Eaux','Evian, Cristalline, Perrier. 50cl','1.50€','img/thumb_eau_big.jpg'),(3,'Expresso','Un expresso fin et corsé','1.50€','img/thumb_expresso_big.jpg');
-/*!40000 ALTER TABLE `boissons` ENABLE KEYS */;
+LOCK TABLES `messages` WRITE;
+/*!40000 ALTER TABLE `messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-08 18:04:57
+-- Dump completed on 2017-03-09 19:09:59
