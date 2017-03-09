@@ -2,6 +2,7 @@
 
 body,html{
     height: 100%;
+    position: relative;
 }
 
 .container-fluid {
@@ -12,6 +13,10 @@ body,html{
 header h1 {
     text-align: center;
 }
+
+/*.formu {*/
+    /*margin-bottom: 285px;*/
+/*}*/
 
 @media screen and (max-width: 768px) {
     header h1 {
@@ -200,9 +205,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
-.copyright { min-height:40px; background-color:#000000;}
+
+.copyright { min-height:40px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+35 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, #000000 35%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%,#000000 35%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 0%,#000000 35%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */;}
 .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
 .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
 .bottom_ul li { float:left; line-height:40px;}

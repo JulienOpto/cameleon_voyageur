@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-
+            </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-            </footer>
+
 
             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
             <script type="text/javascript" src="js/bootstrap.min.js"></script>
