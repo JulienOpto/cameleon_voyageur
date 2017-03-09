@@ -36,9 +36,10 @@ echo '<h2>Liste</h2>';
                     <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
-                        <input type="hidden" name="id" value="'.$data['idb'].'"/>
+                        <input type="hidden" name="type" value="bagels"/>
+                        <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['idb'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
@@ -67,9 +68,10 @@ echo '<h2>Liste</h2>';
                     <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
-                        <input type="hidden" name="id" value="'.$data['idr'].'"/>
+                        <input type="hidden" name="id" value="'.$data['id'].'"/>
+                        <input type="hidden" name="type" value="rollsco"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['idr'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
@@ -98,9 +100,10 @@ echo '<h2>Liste</h2>';
                     <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
-                        <input type="hidden" name="id" value="'.$data['idd'].'"/>
+                        <input type="hidden" name="id" value="'.$data['id'].'"/>
+                        <input type="hidden" name="type" value="desserts"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['idd'].'" class="btn btn-primary">Modifier '.'</a>                       
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>                       
                     </form>
                   </div>
                 </div>
@@ -129,9 +132,10 @@ echo '<h2>Liste</h2>';
                     <h3>'.$data['price'].''.$data['name'].'</a></h3>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
-                        <input type="hidden" name="id" value="'.$data['idbo'].'"/>
+                        <input type="hidden" name="id" value="'.$data['id'].'"/>
+                        <input type="hidden" name="type" value="boissons"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['idbo'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
