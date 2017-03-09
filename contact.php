@@ -8,12 +8,12 @@
     </div>
 
     <div class="form-group">
-        <label for="prenom">Votre nom</label>
+        <label for="prenom">Votre prénom</label>
         <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prénom">
     </div>
 
     <div class="form-group">
-        <label for="email">Votre adresse email</label>
+        <label for="email">Votre adresse em@il</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
     </div>
 
@@ -31,13 +31,13 @@
             <input type="radio" name="note" id="note2" value="2"> 2
         </label>
         <label for="note3" class="radio-inline">
-            <input type="radio" name="note" id="note3" value="2"> 3
+            <input type="radio" name="note" id="note3" value="3"> 3
         </label>
         <label for="note4" class="radio-inline">
-            <input type="radio" name="note" id="note4" value="2"> 4
+            <input type="radio" name="note" id="note4" value="4"> 4
         </label>
         <label for="note5" class="radio-inline">
-            <input type="radio" name="note" id="note5" value="2"> 5
+            <input type="radio" name="note" id="note5" value="5"> 5
         </label>
     </div>
 

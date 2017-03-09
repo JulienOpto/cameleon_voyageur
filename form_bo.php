@@ -53,7 +53,7 @@
             }
 
             if (mysqli_query($bdd, $req)) {
-                header('Location: liste_bo.php');
+                header('Location: form_bo.php');
             }
 
 
