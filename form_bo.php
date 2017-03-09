@@ -3,6 +3,7 @@
     include 'header_bo.php';
     include 'connect.php';
     $bdd = mysqli_connect(SERVER, USER, PASS, DB);
+    mysqli_set_charset($bdd, 'utf8');
     $textButton = 'Créer';
     $name = $price = $photo = $description = $type = $id='';
 
@@ -20,50 +21,6 @@
         $textButton = 'Modifier';
     }
 
-    if (isset($_GET['id'])) {
-        $id = $_GET['id'];
-
-        $req = "SELECT * FROM rollsco WHERE id=$id";
-        $res = mysqli_query($bdd, $req);
-        while($data = mysqli_fetch_assoc($res)) {
-            $photo = $data['photo'];
-            $price = $data['price'];
-            $name = $data['name'];
-            $description = $data['description'];
-            $id = $data['id'];
-        }
-        $textButton = 'Modifier';
-    }
-
-    if (isset($_GET['id'])) {
-        $id = $_GET['id'];
-
-        $req = "SELECT * FROM desserts WHERE id=$id";
-        $res = mysqli_query($bdd, $req);
-        while($data = mysqli_fetch_assoc($res)) {
-            $photo = $data['photo'];
-            $price = $data['price'];
-            $name = $data['name'];
-            $description = $data['description'];
-            $id = $data['id'];
-        }
-        $textButton = 'Modifier';
-    }
-
-    if (isset($_GET['id'])) {
-        $id = $_GET['id'];
-
-        $req = "SELECT * FROM boissons WHERE id=$id";
-        $res = mysqli_query($bdd, $req);
-        while($data = mysqli_fetch_assoc($res)) {
-            $photo = $data['photo'];
-            $price = $data['price'];
-            $name = $data['name'];
-            $description = $data['description'];
-            $id = $data['id'];
-        }
-        $textButton = 'Modifier';
-    }
 
     if (!empty($_POST)) {
 
@@ -83,7 +40,7 @@
             if ($id) {
                 print_r($id);
                 $req = "UPDATE $type SET 
-                    name='$name',description='$description',price='$price',photo='$photo',WHERE id=$id";
+                    name='$name',description='$description',price='$price',photo='$photo' WHERE id=$id";
                 echo $req;
             } else {
                 $req = "INSERT INTO $type (name, description, price, photo) VALUES 
