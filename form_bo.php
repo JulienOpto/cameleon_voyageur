@@ -4,22 +4,66 @@
     include 'connect.php';
     $bdd = mysqli_connect(SERVER, USER, PASS, DB);
     $textButton = 'Créer';
-    $nom = $prix = $photo = $description = $type = $id='';
+    $name = $price = $photo = $description = $type = $id='';
+
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-
         $req = "SELECT * FROM bagels WHERE id=$id";
         $res = mysqli_query($bdd, $req);
         while($data = mysqli_fetch_assoc($res)) {
             $photo = $data['photo'];
-            $prix = $data['prix'];
-            $nom = $data['nom'];
+            $price = $data['price'];
+            $name = $data['name'];
             $description = $data['description'];
+            $id = $data['id'];
         }
         $textButton = 'Modifier';
     }
 
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
 
+        $req = "SELECT * FROM rollsco WHERE id=$id";
+        $res = mysqli_query($bdd, $req);
+        while($data = mysqli_fetch_assoc($res)) {
+            $photo = $data['photo'];
+            $price = $data['price'];
+            $name = $data['name'];
+            $description = $data['description'];
+            $id = $data['id'];
+        }
+        $textButton = 'Modifier';
+    }
+
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+
+        $req = "SELECT * FROM desserts WHERE id=$id";
+        $res = mysqli_query($bdd, $req);
+        while($data = mysqli_fetch_assoc($res)) {
+            $photo = $data['photo'];
+            $price = $data['price'];
+            $name = $data['name'];
+            $description = $data['description'];
+            $id = $data['id'];
+        }
+        $textButton = 'Modifier';
+    }
+
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+
+        $req = "SELECT * FROM boissons WHERE id=$id";
+        $res = mysqli_query($bdd, $req);
+        while($data = mysqli_fetch_assoc($res)) {
+            $photo = $data['photo'];
+            $price = $data['price'];
+            $name = $data['name'];
+            $description = $data['description'];
+            $id = $data['id'];
+        }
+        $textButton = 'Modifier';
+    }
 
     if (!empty($_POST)) {
 
@@ -30,19 +74,20 @@
 
         if (isset($_POST['btnSubmit'])) {
             $photo = $postClean['photo'];
-            $nom = $postClean['nom'];
-            $prix = $postClean['prix'];
+            $name = $postClean['name'];
+            $price = $postClean['price'];
             $description = $postClean['description'];
             $id = $postClean['id'];
             $type = $postClean['type'];
 
             if ($id) {
+                print_r($id);
                 $req = "UPDATE $type SET 
-                    name='$nom',description='$description',price='$prix',photo='$photo',' WHERE id=$id";
+                    name='$name',description='$description',price='$price',photo='$photo',WHERE id=$id";
                 echo $req;
             } else {
                 $req = "INSERT INTO $type (name, description, price, photo) VALUES 
-                    ('$nom', '$description', '$prix', '$photo')";
+                    ('$name', '$description', '$price', '$photo')";
             }
 
             if (mysqli_query($bdd, $req)) {
@@ -81,8 +126,8 @@
                         </div>
             
                         <div class="form-group">
-                            <label for="nom">Nom:</label>
-                            <input class="form-control" type="text" value="'.$nom.'" name="nom" placeholder="nom" id="nom"/>
+                            <label for="name">Nom:</label>
+                            <input class="form-control" type="text" value="'.$name.'" name="name"  id="name"/>
                         </div>
                         
                          <div class="form-group">
@@ -91,8 +136,8 @@
                         </div>
             
                         <div class="form-group">
-                            <label for="prix">Prix:</label>
-                            <input class="form-control" type="text"  value="'.$prix.'"  name="prix" id="prix"/>
+                            <label for="price">Prix:</label>
+                            <input class="form-control" type="text"  value="'.$price.'"  name="price" id="price"/>
                         </div>
                         
                         <div class="form-group">
