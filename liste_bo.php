@@ -24,6 +24,7 @@ echo '<h2>Liste</h2>';
                 FROM bagels;";
     $res = mysqli_query($bdd, $req);
 
+    $valu = 'bagels';
 
     echo '<div class="row">';
     while($data = mysqli_fetch_assoc($res))
@@ -39,8 +40,9 @@ echo '<h2>Liste</h2>';
                         <input type="hidden" name="type" value="bagels"/>
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
+                    
                   </div>
                 </div>
               </div>     
@@ -56,6 +58,7 @@ echo '<h2>Liste</h2>';
                 FROM rollsco;";
     $res = mysqli_query($bdd, $req);
 
+    $valu = 'rollsco';
 
     echo '<div class="row">';
     while($data = mysqli_fetch_assoc($res))
@@ -71,7 +74,7 @@ echo '<h2>Liste</h2>';
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="rollsco"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
@@ -88,6 +91,7 @@ echo '<h2>Liste</h2>';
                 FROM desserts;";
     $res = mysqli_query($bdd, $req);
 
+    $valu = 'desserts';
 
     echo '<div class="row">';
     while($data = mysqli_fetch_assoc($res))
@@ -103,7 +107,7 @@ echo '<h2>Liste</h2>';
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="desserts"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>                       
+                        <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>                       
                     </form>
                   </div>
                 </div>
@@ -120,6 +124,7 @@ echo '<h2>Liste</h2>';
                 FROM boissons;";
     $res = mysqli_query($bdd, $req);
 
+    $valu = 'boissons';
 
     echo '<div class="row">';
     while($data = mysqli_fetch_assoc($res))
@@ -135,7 +140,7 @@ echo '<h2>Liste</h2>';
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
                         <input type="hidden" name="type" value="boissons"/>
                         <input  class="btn btn-danger" type="submit" value="Delete" name="delete"/>
-                        <a href="form_bo.php?id='.$data['id'].'" class="btn btn-primary">Modifier '.'</a>
+                        <a href="form_bo.php?id='.$data['id'].'& valu='.$valu.'" class="btn btn-primary">Modifier '.'</a>
                     </form>
                   </div>
                 </div>
