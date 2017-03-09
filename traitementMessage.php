@@ -1,6 +1,9 @@
 <?php
 
-$bdd = mysqli_connect('localhost', 'isabelle', 'I$abe77e', 'cameleon');
+include 'connect.php';
+
+$bdd = mysqli_connect(SERVER, USER, PASS, DB);
+mysqli_set_charset($bdd,"utf8");
 
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];

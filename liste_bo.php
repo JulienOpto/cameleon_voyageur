@@ -20,7 +20,7 @@ echo '<h2>Liste</h2>';
 
     <?php
 
-    $req = "SELECT id, name, description, price, photo, name
+    $req = "SELECT *
                 FROM bagels;";
     $res = mysqli_query($bdd, $req);
 
@@ -51,7 +51,7 @@ echo '<h2>Liste</h2>';
           <div id="rollsco" class="tab-pane fade in" role="tabpanel">';
 
 
-    $req = "SELECT id, name, description, price, photo, name
+    $req = "SELECT *
                 FROM rollsco;";
     $res = mysqli_query($bdd, $req);
 
@@ -82,7 +82,7 @@ echo '<h2>Liste</h2>';
           <div id="desserts" class="tab-pane  fade in" role="tabpanel">';
 
 
-    $req = "SELECT id, name, description, price, photo, name
+    $req = "SELECT *
                 FROM desserts;";
     $res = mysqli_query($bdd, $req);
 
@@ -113,7 +113,7 @@ echo '<h2>Liste</h2>';
           <div id="boissons" class="tab-pane fade in " role="tabpanel">';
 
 
-    $req = "SELECT id, name, description, price, photo, name
+    $req = "SELECT *
                 FROM boissons;";
     $res = mysqli_query($bdd, $req);
 
