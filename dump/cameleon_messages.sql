@@ -30,7 +30,7 @@ CREATE TABLE `messages` (
   `message` text NOT NULL,
   `note` int(11) NOT NULL,
   PRIMARY KEY (`id_messages`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `messages` (
 
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
+INSERT INTO `messages` VALUES (1,'Martin','Julien','julienmartin.opto@gmail.com','Elle est comment votre blanquette ?',2),(2,'Dujardin','Jean','julienmartin.opto@gmail.com','je suis une mouette !!',2),(3,'chirac','jacques','senile_mais_prestigieux@elys&eacute;e.com','mangez des pommes !',5);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-09 19:09:59
+-- Dump completed on 2017-03-10 10:06:08
