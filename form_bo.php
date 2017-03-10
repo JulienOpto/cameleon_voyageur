@@ -24,7 +24,6 @@
         $hid = 'hidden';
     }
 
-
     if (!empty($_POST)) {
 
         foreach ($_POST as $key=>$data) {
@@ -74,12 +73,12 @@
 
             echo '    <form method="POST" action="form_bo.php">
                         <div class="form-group">
-                            <label for="type">Produit</label>
-                            <select class="form-control" name="type" id="type">';
+                            <label for="type" class="'.$hid.'">Produit</label>
+                            <select class="form-control '.$hid.'" name="type" id="type">';
 
             foreach ($tabType as $label=>$value) {
                 $selected='';
-                if ($type==$value) {
+                if ($typ==$value) {
                     $selected = 'selected="selected"';
                 }
                 echo '<option value="'.$value.'" '.$selected.'>'.$label.'</option>';
