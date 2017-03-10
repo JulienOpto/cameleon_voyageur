@@ -24,7 +24,6 @@
         $hid = 'hidden';
     }
 
-
     if (!empty($_POST)) {
 
         foreach ($_POST as $key=>$data) {
@@ -79,7 +78,7 @@
 
             foreach ($tabType as $label=>$value) {
                 $selected='';
-                if ($type==$value) {
+                if ($typ==$value) {
                     $selected = 'selected="selected"';
                 }
                 echo '<option value="'.$value.'" '.$selected.'>'.$label.'</option>';
