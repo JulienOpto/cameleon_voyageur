@@ -38,7 +38,7 @@ CREATE TABLE `desserts` (
 
 LOCK TABLES `desserts` WRITE;
 /*!40000 ALTER TABLE `desserts` DISABLE KEYS */;
-INSERT INTO `desserts` VALUES (1,'Cheessecake maison','Son parfum évolue au fil des saisons','3.50€','img/thumb_cheesecake_big.jpg'),(2,'Muffin','Blueberry ou pépites de chocolat','2.70€','img/thumb_muffin_big.jpg'),(3,'Cookies','Pépites de chocolat ou tout chocolat','2.50€','img/thumb_cookies_big.jpg');
+INSERT INTO `desserts` VALUES (1,'Cheesecake maison','Son parfum évolue au fil des saisons','3.50€','img/thumb_cheesecake_big.jpg'),(2,'Muffin','Blueberry ou pépites de chocolat','2.70€','img/thumb_muffin_big.jpg'),(3,'Cookies','Pépites de chocolat ou tout chocolat','2.50€','img/thumb_cookies_big.jpg');
 /*!40000 ALTER TABLE `desserts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

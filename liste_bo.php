@@ -34,7 +34,8 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['name'].'</a></h3>
+                    <h4>'.$data['price'].'</a></h4>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="type" value="bagels"/>
@@ -68,7 +69,8 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['name'].'</a></h3>
+                    <h4>'.$data['price'].'</a></h4>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
@@ -101,7 +103,8 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['name'].'</a></h3>
+                    <h4>'.$data['price'].'</a></h4>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
@@ -134,7 +137,8 @@ echo '<h2>Liste</h2>';
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
-                    <h3>'.$data['price'].''.$data['name'].'</a></h3>
+                    <h3>'.$data['name'].'</a></h3>
+                    <h4>'.$data['price'].'</a></h4>
                     <p>'.$data['description'].'</p>
                     <form method="POST" action="delete.php">
                         <input type="hidden" name="id" value="'.$data['id'].'"/>
