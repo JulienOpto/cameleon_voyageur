@@ -30,7 +30,7 @@ echo '<h2>Liste</h2>';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
-              <div class="col-sm-3">
+              <div class="col-md-3 col-sm-4">
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
@@ -65,7 +65,7 @@ echo '<h2>Liste</h2>';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
-              <div class="col-sm-3">
+              <div class="col-md-3 col-sm-4">
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
@@ -99,7 +99,7 @@ echo '<h2>Liste</h2>';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
-              <div class="col-sm-3">
+              <div class="col-md-3 col-sm-4">
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">
@@ -133,7 +133,7 @@ echo '<h2>Liste</h2>';
     while($data = mysqli_fetch_assoc($res))
     {
         echo '
-              <div class="col-sm-3">
+              <div class="col-md-3 col-sm-4">
                 <div class="thumbnail">
                   <img src="'.$data['photo'].'" alt="...">
                   <div class="caption">

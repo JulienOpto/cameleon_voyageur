@@ -47,14 +47,18 @@
             if ($id) {
                 $req = "UPDATE $type SET 
                     name='$name',description='$description',price='$price',photo='$photo' WHERE id=$id";
+                if (mysqli_query($bdd, $req)) {
+                    header('Location: liste_bo.php');
+                }
             } else {
                 $req = "INSERT INTO $type (name, description, price, photo) VALUES 
                     ('$name', '$description', '$price', '$photo')";
+                if (mysqli_query($bdd, $req)) {
+                    header('Location: form_bo.php');
+                }
             }
 
-            if (mysqli_query($bdd, $req)) {
-                header('Location: form_bo.php');
-            }
+
 
 
         }

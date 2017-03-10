@@ -61,7 +61,7 @@ while ($data_bagels = mysqli_fetch_assoc($result_bagels)) {
 
     $print_bagels .='">
                         <div class="row">
-                            <div class="col-xs-offset-3 col-xs-6 photothumb thumbnail">
+                            <div class="col-xs-offset-2 col-xs-8 photothumb thumbnail">
                                 <img src="' . $data_bagels['photo'] . '" alt="' . $data_bagels['name'] . '">
                                 <div class="caption">
                                     <h3>' . $data_bagels['name'] . '</h3>
@@ -116,7 +116,7 @@ while ($data_rollsco = mysqli_fetch_assoc($result_rollsco)) {
     }
     $print_rollsco .='">
                         <div class="row">
-                            <div class="col-xs-offset-3 col-xs-6 photothumb thumbnail">
+                            <div class="col-xs-offset-2 col-xs-8 photothumb thumbnail">
                                 <img src="' . $data_rollsco['photo'] . '" alt="' . $data_rollsco['name'] . '">
                                 <div class="caption">
                                     <h3>' . $data_rollsco['name'] . '</h3>
@@ -171,7 +171,7 @@ while ($data_desserts = mysqli_fetch_assoc($result_desserts)) {
     }
     $print_desserts .='">
                         <div class="row">
-                            <div class="col-xs-offset-3 col-xs-6 photothumb thumbnail">
+                            <div class="col-xs-offset-2 col-xs-8 photothumb thumbnail">
                                 <img src="' . $data_desserts['photo'] . '" alt="' . $data_desserts['name'] . '">
                                 <div class="caption">
                                     <h3>' . $data_desserts['name'] . '</h3>
@@ -225,7 +225,7 @@ while ($data_boissons = mysqli_fetch_assoc($result_boissons)) {
     }
     $print_boissons .='">
                         <div class="row">
-                            <div class="col-xs-offset-3 col-xs-6 photothumb thumbnail">
+                            <div class="col-xs-offset-2 col-xs-8 photothumb thumbnail">
                                 <img src="' . $data_boissons['photo'] . '" alt="' . $data_boissons['name'] . '">
                                 <div class="caption">
                                     <h3>' . $data_boissons['name'] . '</h3>
