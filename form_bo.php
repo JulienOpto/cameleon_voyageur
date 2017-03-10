@@ -74,8 +74,8 @@
 
             echo '    <form method="POST" action="form_bo.php">
                         <div class="form-group">
-                            <label for="type" class="'.$hid.'">Produit</label>
-                            <select class="form-control '.$hid.'" name="type" id="type">';
+                            <label for="type">Produit</label>
+                            <select class="form-control" name="type" id="type">';
 
             foreach ($tabType as $label=>$value) {
                 $selected='';
